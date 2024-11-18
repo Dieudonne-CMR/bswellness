@@ -12,7 +12,6 @@ if(isset($_GET['mat_categori'])){
     $obj_tous_post= recup_article(); // recuper tous les les articles
 }
 // print_r( $obj_tous_post); 
-// commentaire
 //==== fin de recuperation==========
 
 //===================================================================================================================================

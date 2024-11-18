@@ -23,7 +23,6 @@ if(@$url[0]=='home' || @$url[0]==''):
     $produits = recup_produict();
     include_once("template/home.php");
 endif;
-
 //--------Route page Apropos
 if(@$url[0]=='about' ):
     include_once("template/$url[0].php");

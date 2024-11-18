@@ -79,16 +79,14 @@
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
               <div class="hero-content">
-                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">High-Quality CBD
-                  Guernsey</h1>
-                <p class="hero-text hero-text wow fadeInUp" data-wow-delay="0.4s">Working with a global network of
-                  wellbeing enthusiasts and health experts</p>
+                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere1 ?></h1>
+                <p class="hero-text hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere1 ?></p>
                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Whole Plant Hemp Extract.
               </span>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
-                  <a href="products-grid.html" class="vs-btn style1">Start Shopping<i
+                  <a href="product" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
                 </div>
               </div>
@@ -111,15 +109,14 @@
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
               <div class="hero-content">
-                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">Pure CBD Extracted from Swiss Alps</h1>
-                <p class="hero-text wow fadeInUp" data-wow-delay="0.4s">Working with a global network of wellbeing
-                  enthusiasts and health experts</p>
+                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere2 ?></h1>
+                <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere2 ?></p>
                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Whole Plant Hemp Extract.
               </span>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
-                  <a href="products-grid.html" class="vs-btn style1">Start Shopping<i
+                  <a href="product" class="vs-btn style1">Start Shopping<i
                     class="fas fa-long-arrow-right"></i></a>
                 </div>
               </div>
@@ -142,9 +139,8 @@
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
               <div class="hero-content">
-                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s">Superior Hemp Grown in Oregon's</h1>
-                <p class="hero-text wow fadeInUp" data-wow-delay="0.4s">Working with a global network of wellbeing
-                  enthusiasts and health experts</p>
+                <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere3 ?></h1>
+                <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere3 ?></p>
                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Whole Plant Hemp Extract.
@@ -188,6 +184,9 @@
         </div>
       </div>
       <div class="row vs-carousel" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3" data-dots="true">
+        <?php foreach($category as $key=>$val) :
+          if($key<5){
+          ?>
         <div class="col-auto">
           <div class="cate-style">
             <div class="cate-figure">
@@ -195,14 +194,18 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html">CBD Oil</a>
+                <a class="cate-title__link" href="services.html"><?= $val->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html">12 Products</a>
+              <a class="cate-num__link" href="services.html"><?= count_produit_cat($val->matricule_cat) ?></a>
             </span>
             </div>
           </div>
         </div>
+        <?php }else{break;
+        } 
+        endforeach?>
+        <?php /*
         <div class="col-auto">
           <div class="cate-style">
             <div class="cate-figure">
@@ -210,10 +213,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html">CBD Gummies</a>
+                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html">24 Products</a>
+              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -225,10 +228,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html">CBD Kits</a>
+                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html">35 Products</a>
+              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -240,10 +243,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html">CBD Capsules</a>
+                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html">12 Products</a>
+              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -255,10 +258,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html">CBD Cosmetics</a>
+                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html">12 Products</a>
+              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -277,7 +280,7 @@
             </span>
             </div>
           </div>
-        </div>
+        </div> */ ?>
       </div>
     </div>
   </section>
@@ -293,7 +296,7 @@
               <img class="img" src="assets/img/about/c-about-1-1.jpg" alt="about 1 1">
             </div>
             <div class="video-thumb1">
-              <img class="img" src="assets/img/about/about-1-2.jpg" alt="about 2 2">
+              <img class="img" src="<?= $image_about ?>" alt="about 2 2">
               <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style7 popup-video" tabindex="0"><i
                 class="fas fa-play"></i></a>
             </div>
@@ -301,21 +304,19 @@
         </div>
         <div class="col-lg-6 mb-30">
           <div class="about-content1">
-            <div class="title-area">
+           <div class="title-area">
               <span class="sec-subtitle">Welcome to Canobbo</span>
-              <h2 class="sec-title">We Provide High Quality And Certified Products</h2>
-            </div>
+              <h2 class="sec-title"><?= $apropos_entreprise ?></h2>
+            </div> 
             <div class="about-body">
-              <p class="about-text">There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form,
-                by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage
-                of variations of passages of lorem.</p>
+             <!-- <p class="about-text">We Provide High Quality And Certified Products</p>-->
               <div class="list-style1">
                 <ul>
                   <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% Cannabis Oil</li>
                   <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Plant Based Ingredients</li>
                   <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Third Party Lab Tested</li>
                 </ul>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -372,27 +373,31 @@
         </div>
       </div>
       <div class="row">
+        <?php foreach($produits as $key=>$value) : 
+          if($key<8){
+          ?> 
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-1.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details.html"><img src="<?= $image_produit.$value->lien_img_vedette?>" alt="Image" class="img w-100"></a>
               <a href="shop-details.html" class="product-tag2">30% OFF</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
-                  1000 mg (10%)</a></h3>
+              <h3 class="product-title"><a href="shop-details.html"><?= $value->nom_art?></a></h3>
               <span class="product-cate">CBD 100MG</span>
-              <span class="product-price">$39.00</span>
+              <span class="product-price"><?= $value->prix_reel?></span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
         </div>
+        <?php } endforeach ?>
+        <?php /*
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
@@ -535,11 +540,12 @@
             </div>
           </div>
         </div>
+        */ ?>
       </div>
       <div class="row justify-content-center">
         <div class="col-auto">
           <div class="d-inline-flex pt-30">
-            <a href="products-grid.html" class="vs-btn style2">View All Products</a>
+            <a href="product" class="vs-btn style2">View All Products</a>
           </div>
         </div>
       </div>
@@ -560,7 +566,7 @@
           <div class="call-card">
             <div class="call-card__content">
               <span class="call-card__title">Need Help?</span>
-              <a class="call-card__number" href="tel:+12345 56535">+12345 56535</a>
+              <a class="call-card__number" href="tel:+12345 56535"><?= $telephone ?></a>
             </div>
             <div class="call-card__icon">
               <img src="assets/img/icons/phone-1-1.png" alt="phone icon">
@@ -648,7 +654,7 @@
         <div class="col-lg-6 mx-auto">
           <div class="img-box2">
             <div class="img-circle" data-bg-src="assets/img/features/feature-1-2.png"></div>
-            <img src="assets/img/features/feature-1-3.png" alt="feature image">
+            <img src="<?=$image_produit.$produits[0]->lien_img_vedette?>" alt="feature image">
           </div>
         </div>
       </div>
@@ -665,10 +671,9 @@
               <div class="col-auto">
                 <div class="banner-content">
                   <h3 class="banner-title">
-                    <a href="about.html">Skincare & Topicals</a>
+                    <a href="about.html"><?= $produits[0]->nom_art?></a>
                   </h3>
-                  <p class="banner-text">Sed ut perspiciatis unde omnis
-                    is tus error sit voluptatem</p>
+                  <p class="banner-text"><?=$produits[0]->courte_description?></p>
                   <a href="about.html" class="banner-link">
                     View More
                     <img src="assets/img/icons/arrow-icon-1-1.png" alt="arrow icon ">
@@ -677,7 +682,7 @@
               </div>
             </div>
             <div class="banner-img">
-              <img src="assets/img/banner/banner-1-1.png" alt="banner-img">
+              <img src="<?=$image_produit.$produits[0]->lien_img_vedette?>" alt="banner-img">
             </div>
           </div>
         </div>
@@ -687,10 +692,9 @@
               <div class="col-auto">
                 <div class="banner-content">
                   <h3 class="banner-title">
-                    <a href="about.html">Edibles & Drinks</a>
+                    <a href="about.html"><?= $produits[1]->nom_art?></a>
                   </h3>
-                  <p class="banner-text">Sed ut perspiciatis unde omnis
-                    is tus error sit voluptatem</p>
+                  <p class="banner-text"><?=$produits[1]->courte_description?></p>
                   <a href="about.html" class="banner-link">
                     View More
                     <img src="assets/img/icons/arrow-icon-1-1.png" alt="arrow icon ">
