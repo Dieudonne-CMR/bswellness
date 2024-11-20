@@ -121,6 +121,7 @@
           </div>
         </div>
       </div>
+      
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row">
@@ -129,8 +130,9 @@
               ?>
             <div class="col-lg-6 mb-30">
               <div class="vs-product product-style7">
-                <div class="product-img">
-                  <a href="product-details/<?=$produit->mat_article?>" tabindex="0"><img src="assets/img/products/p-s-1-2.jpg" alt="Image" class="img"></a>
+
+                <div class="product-img"  >
+                  <a href="product-details/<?=$produit->mat_article?>" tabindex="0"><img src="<?= $image_produit.$produit->lien_img_vedette?>" alt="Image" class="img"></a>
                 </div>
                 <div class="product-content">
                   <div class="star-rating" role="img" aria-label="Rated 5 out of 5">

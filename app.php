@@ -19,7 +19,7 @@ if(@$url[0]=='home' || @$url[0]==''):
     $services = recup_services();
     $equipe = info_equipe();
     $article = recup_article();
-    $category = recup_category();
+    $category = recup_categories();
     $produits = recup_produict();
     include_once("template/home.php");
 endif;
@@ -31,7 +31,7 @@ endif;
 //------- Route page boutique
 if(@$url[0]=='product'):
     $produits = recup_produict();
-    $categorie = recup_category();
+    $categorie = recup_categories();
     // if(!emplty($produits))
     include_once("template/$url[0].php");
 endif;
