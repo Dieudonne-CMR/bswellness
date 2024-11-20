@@ -217,12 +217,12 @@
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div> 
-              <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea
-                  Blend 20 bags</a></h3> 
+              <h3 class="product-title"><a href="shop-details.html">Thé au chanvre Naturecan
+              Mélangez 20 sachets</a></h3> 
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
@@ -232,18 +232,18 @@
           <div class="vs-product product-style6">
             <div class="product-img">
               <a href="shop-details.html"><img src="assets/img/products/p-1-3.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+              <a href="shop-details.html" class="product-tag2">En rupture de stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Noté<strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong> Sur 5</span>
               </div>
               <h3 class="product-title"><a href="shop-details.html">Orange Couny CBD
                   E-liquid</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
@@ -256,13 +256,13 @@
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Noté<strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea Blend</a></h3>
+              <h3 class="product-title"><a href="shop-details.html">Mélange de thé au chanvre Naturecan</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
