@@ -74,6 +74,7 @@
       <img src="assets/img/hero/h-1-4.png" alt="hero leaf 3">
     </div>
     <div class="container">
+
       <div class="vs-carousel" data-dots="true" data-fade="true">
         <div>
           <div class="row gy-4 justify-content-between align-items-center">
@@ -105,6 +106,7 @@
             </div>
           </div>
         </div>
+
         <div>
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
@@ -135,6 +137,7 @@
             </div>
           </div>
         </div>
+
         <div>
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
@@ -151,6 +154,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
               <div class="hero-img">
                 <img src="assets/img/hero/h-1-1.png" alt="hero image 1">
@@ -163,6 +167,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -194,10 +199,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services"><?= $val->nom ?></a>
+                <a class="cate-title__link" href="services"><?= $val->libelle ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services"><?= count_produit_cat($val->matricule_cat) ?></a>
+              <a class="cate-num__link" href="services"><?= count_produit_cat($val->mat_categorie) ?></a>
             </span>
             </div>
           </div>
@@ -317,7 +322,7 @@
                   <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
                 </ul>
               </div> 
-            </div>
+            </div> 
           </div>
         </div>
       </div>
