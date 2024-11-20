@@ -3,15 +3,15 @@ session_start();
 //65707eb0c3041 //6561d3dd3bbf7 65c3e2b8e0756 / 662f2c0f2234e / 
 
 //--------- lien des images de Service 
-$img_service="https://akila.blog/img_service/";
+//$img_service="https://akila.blog/img_service/";
 //--------- lien des images des articles 
-$url_image="https://akila.blog/@ressouce/mg_etablissement/"; 
+//$url_image="https://akila.blog/@ressouce/mg_etablissement/"; 
 //---------lien du logo de l'entreprise
-$lien_logo ="https://akila.blog/logo_site/"; 
+//$lien_logo ="https://akila.blog/logo_site/"; 
 //---------lien pour les bannieres de l'entreprise
-$image_banniere="https://akila.blog/image_baniere/";
+//$image_banniere="https://akila.blog/image_baniere/";
 //------- partenaire
-$logo_partenaire="https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire
+//$logo_partenaire="https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire
 
 
 // include "bd/query.php" ;
@@ -73,7 +73,7 @@ $mention3 = @$info_header -> mention3;
 $mention_titre3 = @$info_header -> mention_titre3;
 $mention4 = @$info_header ->mention4;
 $mention_titre4 = @$info_header -> mention_titre4;
-//=======information du fichier api_info_entreprise.php
+//=======information du fichier api_info_entreprise.php //assets/img/about/about-1-2.jpg
 //------------ Bannieres
 $banniere1  =           @$dataEntreprise->about_image1;
 $banniere2 =            @$dataEntreprise->banniere_image2;

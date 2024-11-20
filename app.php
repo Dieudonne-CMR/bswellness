@@ -23,7 +23,6 @@ if(@$url[0]=='home' || @$url[0]==''):
     $produits = recup_produict();
     include_once("template/home.php");
 endif;
-
 //--------Route page Apropos
 if(@$url[0]=='about' ):
     include_once("template/$url[0].php");
@@ -32,6 +31,7 @@ endif;
 //------- Route page boutique
 if(@$url[0]=='product'):
     $produits = recup_produict();
+    $categorie = recup_category();
     // if(!emplty($produits))
     include_once("template/$url[0].php");
 endif;
@@ -54,7 +54,7 @@ if(@$url[0]=='product-details'):
         $prix_reel          =    $detail_pro[0]->prix_reel;
         $prix_fictif        =    $detail_pro[0]->prix_fictif;
         $mumero             =    info_boutique()[0]->numero_whatsapp_aide;
-        $code_iso_devise               =    info_boutique()[0]->code_iso_devise;
+        $code_iso_devise    =    info_boutique()[0]->code_iso_devise;
 
         include_once("template/$url[0].php");
     else:
