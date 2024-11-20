@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | About Us </title>
+  <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | À propos de nous </title>
   <meta name="author" content="vecuro">
   <meta name="description" content="Cannabo - Marijuana and CBD Oil HTML5 Template">
   <meta name="keywords" content="Cannabo - Marijuana and CBD Oil HTML5 Template" />
@@ -67,24 +67,24 @@
 	==============================-->
   <?php include "includes/header.php" ?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="assets/img/bg/b-1-3.png">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$banniere2?>">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
           <div class="breadcumb-content">
-            <h1 class="breadcumb-title">About Us</h1>
+            <h1 class="breadcumb-title">À propos de nous</h1>
             <div class="breadcumb-menu-wrap">
               <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>About Us</li>
+                <li><a href="home">Acceuil</a></li>
+                <li>À propos de nous</li>
               </ul>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   </section>
-  <!-- breadcumb End -->
+  <!-- breadcumb End assets/img/bg/b-1-3.png-->
   <!-- About Area Start  -->
   <section class="about-layout1 space-top z-index-common space-extra-bottom">
     <img src="assets/img/about/about-ele1-1.png" alt="about element" class="about-ele1">
@@ -96,7 +96,7 @@
               <img class="img" src="assets/img/about/c-about-1-1.jpg" alt="about 1 1">
             </div>
             <div class="video-thumb1">
-              <img class="img" src="assets/img/about/about-1-2.jpg" alt="about 2 2">
+              <img class="img" src="<?= $banniere1 ?>" alt="about 2 2">
               <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style7 popup-video" tabindex="0"><i
                 class="fas fa-play"></i></a>
             </div>
@@ -105,18 +105,18 @@
         <div class="col-lg-6 mb-30">
           <div class="about-content1">
             <div class="title-area">
-              <span class="sec-subtitle">Welcome to Canobbo</span>
-              <h2 class="sec-title">We Provide High Quality And Certified Products</h2>
+              <span class="sec-subtitle">Bienvenue à Canobbo</span>
+              <h2 class="sec-title"><?= $apropos_entreprise ?></h2>
             </div>
             <div class="about-body">
-              <p class="about-text">There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form,
+             <!-- <p class="about-text">There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form,
                 by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage
-                of variations of passages of lorem.</p>
+                of variations of passages of lorem.</p> -->
               <div class="list-style1">
                 <ul>
-                  <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% Cannabis Oil</li>
-                  <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Plant Based Ingredients</li>
-                  <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Third Party Lab Tested</li>
+                  <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
+                  <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
+                  <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
                 </ul>
               </div>
             </div>
@@ -140,17 +140,17 @@
                   </div>
                 </div>
                 <div class="review-content__right">
-                  <h2 class="review-title h3">No.1 CBD Specialist</h2>
-                  <p class="review-text">CBD oils, joint & muscle rubs, skin care & cosmetics, edibles, drinks,
-                    e-liquids,concentrates &
-                    isolates, vapes & more…</p>
+                  <h2 class="review-title h3">Spécialiste n°1 du CBD</h2>
+                  <p class="review-text">Huiles de CBD, frictions articulaires et musculaires, soins de la peau et cosmétiques, produits comestibles, boissons,
+                    e-liquides, concentrés et
+                    isole, vape et plus encore…</p>
                 </div>
               </div>
             </div>
             <div class="col-auto text-center text-lg-end">
-              <span class="review-subtitle">Rated 4.9 / 5</span>
+              <span class="review-subtitle">Noté 4.9 / 5</span>
               <img src="assets/img/others/ot-1-1.png" alt="review star" class="review-star">
-              <p class="review-subtitle2">Based on 848 reviews</p>
+              <p class="review-subtitle2">Basé sur 848 avis</p>
               <img src="assets/img/logos/l-1-3.png" alt="review logo" class="review-trust">
             </div>
           </div>
@@ -167,8 +167,8 @@
       <div class="row">
         <div class="col-lg-7 mx-auto">
           <div class="title-area text-center">
-            <span class="sec-subtitle">Our products are certified</span>
-            <h2 class="sec-title">Great Results in Improving Well-being</h2>
+            <span class="sec-subtitle">Nos produits sont certifiés</span>
+            <h2 class="sec-title">D’excellents résultats dans l’amélioration du bien-être</h2>
           </div>
         </div>
       </div>
@@ -180,10 +180,10 @@
               <span class="feature-number">1.</span>
             </div>
             <div class="feature-content">
-              <h3 class="feature-title">Browse Our CBD</h3>
-              <p class="feature-text">Browse our tasty selection of edibles available.
-                Our CBD’s products give you safe access to the
-                full potential.
+              <h3 class="feature-title">Parcourez notre CBD</h3>
+              <p class="feature-text">Parcourez notre savoureuse sélection de produits comestibles disponibles.
+              Nos produits CBD vous donnent un accès sécurisé au
+              plein potentiel.
               </p>
             </div>
           </div>
@@ -193,10 +193,10 @@
               <span class="feature-number">2.</span>
             </div>
             <div class="feature-content">
-              <h3 class="feature-title">Place Your Order</h3>
-              <p class="feature-text">Browse our tasty selection of edibles available.
-                Our CBD’s products give you safe access to the
-                full potential.
+              <h3 class="feature-title">Passez votre commande</h3>
+              <p class="feature-text">Parcourez notre savoureuse sélection de produits comestibles disponibles.
+                Nos produits CBD vous donnent un accès sécurisé au
+                plein potentiel.
               </p>
             </div>
           </div>
@@ -206,10 +206,10 @@
               <span class="feature-number">3.</span>
             </div>
             <div class="feature-content">
-              <h3 class="feature-title">Deliver Your Order</h3>
-              <p class="feature-text">Browse our tasty selection of edibles available.
-                Our CBD’s products give you safe access to the
-                full potential.
+              <h3 class="feature-title">Livrez votre commande</h3>
+              <p class="feature-text">Parcourez notre savoureuse sélection de produits comestibles disponibles.
+                Nos produits CBD vous donnent un accès sécurisé au
+                plein potentiel.
               </p>
             </div>
           </div>

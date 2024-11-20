@@ -64,19 +64,19 @@
 	******************************** -->
   <!--==============================
 	Preloader
-	==============================-->
+	============================== assets/img/bg/b-1-3.png-->
   <?php include "includes/header.php" ?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="assets/img/bg/b-1-3.png">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$image_produit-> $lien_img_vedette?>">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
           <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Shop Details</h1>
+            <h1 class="breadcumb-title"><?=$nom_produit?></h1>
             <div class="breadcumb-menu-wrap">
               <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>Shop Details</li>
+                <li><a href="home">Acceuil</a></li>
+                <li>Détails du produit</li>
               </ul>
             </div>
           </div>
@@ -112,19 +112,18 @@
         <div class="col-lg-6 mb-30">
           <div class="product-about">
             <div class="product-rating">
-              <span class="product-instock">Available</span>
+              <span class="product-instock">Disponible</span>
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
               </div>
-              <span class="product-rating__total">(1 Review )</span>
+              <span class="product-rating__total">(1 Revoir )</span>
             </div>
-            <h2 class="product-title">Naturecan Hemp Tea Blend
-              20 bags</h2>
-            <span class="product-ml">Strong / 4% / 30ml</span>
-            <p class="product-price">$19.85 <del>$23.85</del></p>
+            <h2 class="product-title"><?=$nom_produit?></h2>
+            <span class="product-ml">Fort / 4% / 30ml</span>
+            <p class="product-price"><?=$prix_reel?> <del><?=$prix_fictif?></del></p>
             <div class="actions">
               <div class="quantity">
-                <label for="quantity" class="screen-reader-text">Quantity:</label>
+                <label for="quantity" class="screen-reader-text">Quantité:</label>
                 <div class="quantity__field quantity-container">
                   <input type="number" id="quantity" class="qty-input" step="1" min="1" max="100" name="quantity" value="01" title="Qty">
                   <div class="quantity__buttons">
@@ -134,33 +133,33 @@
                 </div>
               </div>
             </div>
-            <span class="counter-title">Limited Time Offer:</span>
+            <span class="counter-title">Offre à durée limitée:</span>
             <div class="counter-style">
               <ul class="offer-counter" data-offer-date="10/12/2025">
                 <li>
-                  <div class="day count-number">00</div><span class="count-name">Days</span>
+                  <div class="day count-number">00</div><span class="count-name">Jours</span>
                 </li>
                 <li>
-                  <div class="hour count-number">00</div><span class="count-name">Hours</span>
+                  <div class="hour count-number">00</div><span class="count-name">Heures</span>
                 </li>
                 <li>
                   <div class="minute count-number">00</div><span class="count-name">Minutes</span>
                 </li>
                 <li>
-                  <div class="seconds count-number">00</div><span class="count-name">Seconds</span>
+                  <div class="seconds count-number">00</div><span class="count-name">Secondes</span>
                 </li>
               </ul>
             </div>
             <div class="pro-btns">
-              <a href="cart.html" class="vs-btn">Add to Cart</a>
+              <a href="cart.html" class="vs-btn">Ajouter au panier</a>
               <a href="#" class="icon-btn"><i class="far fa-heart"></i></a>
             </div>
             <div class="product_meta">
               <span class="sku_wrapper">
-              <p>SKU:</p> <span class="sku">Product-1-1</span>
+              <p>SKU:</p> <span class="sku">Produit-1-1</span>
               </span>
               <span>
-              <p>Tags:</p> <a href="#" rel="tag">Featured</a><a href="#" rel="tag">Products</a><a href="#"
+              <p>Tags:</p> <a href="#" rel="tag">En vedette</a><a href="#" rel="tag">Produits</a><a href="#"
                 rel="tag">Memp</a>
             </span>
             </div>
@@ -176,20 +175,8 @@
     <div class="container">
       <div class="product-description mb-50">
         <h3 class="blog-inner-title">Description</h3>
-        <p>Nisl quam nestibulum ac quam nec odio elementu aucan ligula. Orci varius natoque pena tibus et ma urient monte
-          nascete ridiculus mus nestibulum ac quam necy
-          sque um ac quam nec odio rbine. Nisl quam nestibulum ac quam nec odio elementu aucan ligula. Orci varius natoque
-          pena Nisl quam nestibulum ac quam nec tmon
-          te nascete ridiculus mus nellentesque um ac quam nec odio rbine. Nisl quam nestibulum ac quam nec odio elementu
-          aucan ligula. Orci variusvarius natoque pena6
-          oque pena tibus et ma urient monte nascete ridiculus mus nellentesque um ac quam nec odio rbine. Nisl idiculus
-          mus nellentesque um ac quam nestibulum aquam
-          mentu aucan ligula. Orci varius natoque penac quam nec odio rbine.</p>
-        <p>Misl quam nestibulum ac quam nec odio elementu aucan ligula. Orci varius natoque pena tibus et ma urient monte
-          nascete ridiculus mus nestibulum ac quam necy
-          sque um ac quam nec odio rbine. Nisl quam nestibulum ac quam nec odio elementu aucan ligula. Orci varius natoque
-          pena Nisl quam nestibulum ac quam nec tmon
-          te nascete ridiculus mus nellentesque um ac quam nec odio rbine</p>
+        <p><?=$courte_description?></p>
+        <p><?=$description?></p>
       </div>
 
     </div>
@@ -198,24 +185,24 @@
   <!-- Related Products -->
   <section class="space-extra-bottom">
     <div class="container">
-      <h3 class="blog-inner-title">Add Reviews</h3>
+      <h3 class="blog-inner-title">Ajouter des avis</h3>
       <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="vs-product product-style6">
             <div class="product-img">
               <a href="shop-details.html"><img src="assets/img/products/p-1-1.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+              <a href="shop-details.html" class="product-tag2">En rupture de stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
-                  1000 mg (10%)</a></h3>
+              <h3 class="product-title"><a href="shop-details.html">Huile de CBD à spectre complet
+              1000mg (10%)</a></h3>
               <span class="product-cate">CBD 100MG</span>
-              <span class="product-price">$39.00</span>
+              <span class="product-price"><?=$prix_reel?></span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
@@ -228,10 +215,10 @@
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
-              </div>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
+              </div> 
               <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea
-                  Blend 20 bags</a></h3>
+                  Blend 20 bags</a></h3> 
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
@@ -249,7 +236,7 @@
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong> out of 5</span>
               </div>
               <h3 class="product-title"><a href="shop-details.html">Orange Couny CBD
                   E-liquid</a></h3>
@@ -269,7 +256,7 @@
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong> out of 5</span>
               </div>
               <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea Blend</a></h3>
               <span class="product-cate">CBD 100MG</span>

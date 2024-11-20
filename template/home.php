@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from html.vecurosoft.com/cannabo/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:40:28 GMT -->
+<!-- Mirrored from html.vecurosoft.com/cannabo/demo/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:40:28 GMT -->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -62,7 +62,7 @@
   <!--********************************
    		Code Start From Here 
 	******************************** -->
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php";?>
 
   <!-- Hero Area -->
   <section class="hero-style1">
@@ -83,7 +83,7 @@
                 <p class="hero-text hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere1 ?></p>
                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
-                1000MG, Whole Plant Hemp Extract.
+                1000MG, Extrait de plante entière de chanvre.
               </span>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="product" class="vs-btn style1">Visitez la boutique<i
@@ -113,10 +113,10 @@
                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere2 ?></p>
                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
-                1000MG, Whole Plant Hemp Extract.
+                1000MG, Extrait de plante entière de chanvre.
               </span>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
-                  <a href="product" class="vs-btn style1">Start Shopping<i
+                  <a href="product" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
                 </div>
               </div>
@@ -143,10 +143,10 @@
                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere3 ?></p>
                 <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
-                1000MG, Whole Plant Hemp Extract.
+                1000MG, Extrait de plante entière de chanvre.
               </span>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
-                  <a href="products-grid.html" class="vs-btn style1">Start Shopping<i
+                  <a href="products-grid" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
                 </div>
               </div>
@@ -178,8 +178,8 @@
             <div class="sec-icon">
               <img src="assets/img/icons/s-1-1.png" alt="icon">
             </div>
-            <span class="sec-subtitle">browser category</span>
-            <h2 class="sec-title">Pick Your Product Type</h2>
+            <span class="sec-subtitle">Parcourir les catégories</span>
+            <h2 class="sec-title">Choisissez votre type de produit</h2>
           </div>
         </div>
       </div>
@@ -194,10 +194,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html"><?= $val->nom ?></a>
+                <a class="cate-title__link" href="services"><?= $val->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html"><?= count_produit_cat($val->matricule_cat) ?></a>
+              <a class="cate-num__link" href="services"><?= count_produit_cat($val->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -213,10 +213,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
+                <a class="cate-title__link" href="services"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
+              <a class="cate-num__link" href="services"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -228,10 +228,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
+                <a class="cate-title__link" href="services"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
+              <a class="cate-num__link" href="services"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -243,10 +243,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
+                <a class="cate-title__link" href="services"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
+              <a class="cate-num__link" href="services"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -258,10 +258,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html"><?= $category[0]->nom ?></a>
+                <a class="cate-title__link" href="services"><?= $category[0]->nom ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
+              <a class="cate-num__link" href="services"><?= count_produit_cat($category[0]->matricule_cat) ?></a>
             </span>
             </div>
           </div>
@@ -273,10 +273,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services.html">CBD Oil</a>
+                <a class="cate-title__link" href="services">CBD Oil</a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services.html">12 Products</a>
+              <a class="cate-num__link" href="services">12 Products</a>
             </span>
             </div>
           </div>
@@ -305,16 +305,16 @@
         <div class="col-lg-6 mb-30">
           <div class="about-content1">
            <div class="title-area">
-              <span class="sec-subtitle">Welcome to Canobbo</span>
+              <span class="sec-subtitle">Bienvenue à Canobbo</span>
               <h2 class="sec-title"><?= $apropos_entreprise ?></h2>
             </div> 
             <div class="about-body">
              <!-- <p class="about-text">We Provide High Quality And Certified Products</p>-->
               <div class="list-style1">
                 <ul>
-                  <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% Cannabis Oil</li>
-                  <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Plant Based Ingredients</li>
-                  <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Third Party Lab Tested</li>
+                  <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
+                  <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
+                  <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
                 </ul>
               </div> 
             </div>
@@ -338,17 +338,17 @@
                   </div>
                 </div>
                 <div class="review-content__right">
-                  <h2 class="review-title h3">No.1 CBD Specialist</h2>
-                  <p class="review-text">CBD oils, joint & muscle rubs, skin care & cosmetics, edibles, drinks,
-                    e-liquids,concentrates &
-                    isolates, vapes & more…</p>
+                  <h2 class="review-title h3">Spécialiste n°1 du CBD</h2>
+                  <p class="review-text">Huiles de CBD, frictions articulaires et musculaires, soins de la peau et cosmétiques, produits comestibles, boissons,
+                    e-liquides, concentrés et
+                    isole, vape et plus encore…</p>
                 </div>
               </div>
             </div>
             <div class="col-auto text-center text-lg-end">
-              <span class="review-subtitle">Rated 4.9 / 5</span>
+              <span class="review-subtitle">Noté 4.9 / 5</span>
               <img src="assets/img/others/ot-1-1.png" alt="review star" class="review-star">
-              <p class="review-subtitle2">Based on 848 reviews</p>
+              <p class="review-subtitle2">Basé sur 848 avis</p>
               <img src="assets/img/logos/l-1-3.png" alt="review logo" class="review-trust">
             </div>
           </div>
@@ -367,8 +367,8 @@
             <div class="sec-icon">
               <img src="assets/img/icons/s-1-2.png" alt="icon">
             </div>
-            <span class="sec-subtitle">Quality Products</span>
-            <h2 class="sec-title">Trending Products</h2>
+            <span class="sec-subtitle">Produits de qualité</span>
+            <h2 class="sec-title">Produits tendance</h2>
           </div>
         </div>
       </div>
@@ -379,19 +379,19 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="<?= $image_produit.$value->lien_img_vedette?>" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">30% OFF</a>
+              <a href="shop-details"><img src="<?= $image_produit.$value->lien_img_vedette?>" alt="Image" class="img w-100"></a>
+              <a href="shop-details" class="product-tag2">30% OFF</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong> sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html"><?= $value->nom_art?></a></h3>
+              <h3 class="product-title"><a href="shop-details"><?= $value->nom_art?></a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price"><?= $value->prix_reel?></span>
               <div class="product-actions">
-                <a href="cart" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Ajouter au panier</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -401,19 +401,19 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-2.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details"><img src="assets/img/products/p-1-2.png" alt="Image" class="img w-100"></a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea
+              <h3 class="product-title"><a href="shop-details">Naturecan Hemp Tea
                   Blend 20 bags</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -421,20 +421,20 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-3.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+              <a href="shop-details"><img src="assets/img/products/p-1-3.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details" class="product-tag2">Out of Stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Orange Couny CBD
+              <h3 class="product-title"><a href="shop-details">Orange Couny CBD
                   E-liquid</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -442,18 +442,18 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-4.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details"><img src="assets/img/products/p-1-4.png" alt="Image" class="img w-100"></a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea Blend</a></h3>
+              <h3 class="product-title"><a href="shop-details">Naturecan Hemp Tea Blend</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -461,20 +461,20 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-5.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+              <a href="shop-details"><img src="assets/img/products/p-1-5.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details" class="product-tag2">Out of Stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
+              <h3 class="product-title"><a href="shop-details">Full Spectrum CBD Oil
                   1000 mg (10%)</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -482,19 +482,19 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-6.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details"><img src="assets/img/products/p-1-6.png" alt="Image" class="img w-100"></a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
+              <h3 class="product-title"><a href="shop-details">Full Spectrum CBD Oil
                   1000 mg (10%)</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -502,20 +502,20 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-7.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+              <a href="shop-details"><img src="assets/img/products/p-1-7.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details" class="product-tag2">Out of Stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
+              <h3 class="product-title"><a href="shop-details">Full Spectrum CBD Oil
                   1000 mg (10%)</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -523,19 +523,19 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-8.png" alt="Image" class="img w-100"></a>
+              <a href="shop-details"><img src="assets/img/products/p-1-8.png" alt="Image" class="img w-100"></a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
+              <h3 class="product-title"><a href="shop-details">Full Spectrum CBD Oil
                   1000 mg (10%)</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="cart" class="vs-btn">Add to Cart</a>
+                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -545,7 +545,7 @@
       <div class="row justify-content-center">
         <div class="col-auto">
           <div class="d-inline-flex pt-30">
-            <a href="product" class="vs-btn style2">View All Products</a>
+            <a href="product" class="vs-btn style2">Voir tous les produits</a>
           </div>
         </div>
       </div>
@@ -558,14 +558,14 @@
       <div class="row justify-content-between align-items-center">
         <div class="col-xl-7 col-lg-8">
           <div class="title-area">
-            <span class="sec-subtitle">What Makes Different?</span>
-            <h2 class="sec-title">What Makes Canobbo CBD Different?</h2>
+            <span class="sec-subtitle">Qu’est-ce qui fait la différence ?</span>
+            <h2 class="sec-title">Qu’est-ce qui différencie Canobbo CBD ?</h2>
           </div>
         </div>
         <div class="col-auto">
           <div class="call-card">
             <div class="call-card__content">
-              <span class="call-card__title">Need Help?</span>
+              <span class="call-card__title">Besoin d'aide ?</span>
               <a class="call-card__number" href="tel:+12345 56535"><?= $telephone ?></a>
             </div>
             <div class="call-card__icon">
@@ -586,12 +586,12 @@
                   </div>
                 </div>
                 <h3 class="feature-title">
-                  <a href="about.html">
-                    Direct From Our Farm
+                  <a href="about">
+                  <?=$titre_s1?>
                   </a>
                 </h3>
                 <p class="feature-text">
-                  Sed ut perspiciatis unde omnis is tus error sit voluptatem
+                  <?=$discription_s1?>
                 </p>
               </div>
             </div>
@@ -604,12 +604,12 @@
                   </div>
                 </div>
                 <h3 class="feature-title">
-                  <a href="about.html">
-                    Soil Association Certified
+                  <a href="about">
+                    <?=$titre_s2?>
                   </a>
                 </h3>
                 <p class="feature-text">
-                  Sed ut perspiciatis unde omnis is tus error sit voluptatem
+                <?=$discription_s2?>
                 </p>
               </div>
             </div>
@@ -622,12 +622,12 @@
                   </div>
                 </div>
                 <h3 class="feature-title">
-                  <a href="about.html">
-                    Broad Spectrum Extract
+                  <a href="about">
+                  <?=$titre_s3?>
                   </a>
                 </h3>
                 <p class="feature-text">
-                  Sed ut perspiciatis unde omnis is tus error sit voluptatem
+                <?=$discription_s3?>
                 </p>
               </div>
             </div>
@@ -640,12 +640,12 @@
                   </div>
                 </div>
                 <h3 class="feature-title">
-                  <a href="about.html">
-                    3rd Party Testing
+                  <a href="about">
+                    <?=$titre_s1?>
                   </a>
                 </h3>
                 <p class="feature-text">
-                  Sed ut perspiciatis unde omnis is tus error sit voluptatem
+                 <?=$discription_s1?>
                 </p>
               </div>
             </div>
@@ -671,11 +671,12 @@
               <div class="col-auto">
                 <div class="banner-content">
                   <h3 class="banner-title">
-                    <a href="about.html"><?= $produits[0]->nom_art?></a>
+                    <a href="about"><?= $produits[0]->nom_art?></a>
                   </h3>
-                  <p class="banner-text"><?=$produits[0]->courte_description?></p>
-                  <a href="about.html" class="banner-link">
-                    View More
+                  <p class="banner-text"><?=strTextLent($produits[0]->courte_description,256)?>
+                  </p>
+                  <a href="about" class="banner-link">
+                    Voir plus
                     <img src="assets/img/icons/arrow-icon-1-1.png" alt="arrow icon ">
                   </a>
                 </div>
@@ -692,11 +693,11 @@
               <div class="col-auto">
                 <div class="banner-content">
                   <h3 class="banner-title">
-                    <a href="about.html"><?= $produits[1]->nom_art?></a>
+                    <a href="about"><?= $produits[1]->nom_art?></a>
                   </h3>
-                  <p class="banner-text"><?=$produits[1]->courte_description?></p>
-                  <a href="about.html" class="banner-link">
-                    View More
+                  <p class="banner-text"><?=strTextLent($produits[0]->courte_description,256)?></p>
+                  <a href="about" class="banner-link">
+                    Voir plus
                     <img src="assets/img/icons/arrow-icon-1-1.png" alt="arrow icon ">
                   </a>
                 </div>
@@ -725,49 +726,49 @@
       <div class="row vs-carousel text-center" data-slide-show="6" data-md-slide-show="3">
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-1.png" alt="brand">
             </a>
           </div>
         </div>
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-2.png" alt="brand">
             </a>
           </div>
         </div>
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-3.png" alt="brand">
             </a>
           </div>
         </div>
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-4.png" alt="brand">
             </a>
           </div>
         </div>
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-5.png" alt="brand">
             </a>
           </div>
         </div>
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-6.png" alt="brand">
             </a>
           </div>
         </div>
         <div class="col-auto">
           <div class="brand-style">
-            <a href="about.html">
+            <a href="about">
               <img src="assets/img/brand/brand-1-1.png" alt="brand">
             </a>
           </div>
@@ -783,8 +784,8 @@
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-7">
           <div class="title-area">
-            <span class="sec-subtitle">TESTIMONIALS</span>
-            <h2 class="sec-title">What Our Customer Say</h2>
+            <span class="sec-subtitle">TÉMOIGNAGES</span>
+            <h2 class="sec-title">Ce que disent nos clients</h2>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -792,16 +793,16 @@
             <button class="vs-btn style4" data-slick-prev="#testislide1"><i class="far fa-arrow-left"></i></button>
             <button class="vs-btn style4" data-slick-next="#testislide1"><i class="far fa-arrow-right"></i></button>
           </div>
-        </div>
+        </div> 
       </div>
       <div class="row vs-carousel" data-slide-show="2" id="testislide1">
         <div class="col-auto">
-          <div class="testi-style1">
+          <div class="testi-style1">  
             <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-              <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+              <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
-            <span class="testi-author">By <a href="#">Thomas Willimes</a></span>
-            <h3 class="testi-title">Best Protein i have Ever</h3>
+            <span class="testi-author">Par<a href="#">Thomas Willimes</a></span>
+            <h3 class="testi-title">La meilleure protéine que j'ai jamais eu</h3>
             <div class="testi-content">
               <div class="testi-image">
                 <img class="img1" src="assets/img/testimonials/testi-1-1.png" alt="testimonials">
@@ -809,11 +810,11 @@
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">I've been taking CBD oil now for 2 years.
-                Searched lots of sites and was absolutely
-                blown away by the reviews of Cannaray oil.
-                The information and range of high-quality
-                products were amazing.
+              <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
+                J'ai cherché sur de nombreux sites et j'étais absolument
+                époustouflé par les critiques de l’huile Cannaray.
+                Les informations et la gamme de produits de haute qualité
+                les produits étaient incroyables.
               </p>
             </div>
           </div>
@@ -821,10 +822,10 @@
         <div class="col-auto">
           <div class="testi-style1">
             <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-              <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+              <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
-            <span class="testi-author">By <a href="#">Thomas Willimes</a></span>
-            <h3 class="testi-title">Best-Tasting CBD Oil Ever</h3>
+            <span class="testi-author">Par<a href="#">Thomas Willimes</a></span>
+            <h3 class="testi-title">L’huile de CBD la plus savoureuse de tous les temps</h3>
             <div class="testi-content">
               <div class="testi-image">
                 <img class="img1" src="assets/img/testimonials/testi-1-2.png" alt="testimonials">
@@ -832,11 +833,11 @@
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">I've been taking CBD oil now for 2 years.
-                Searched lots of sites and was absolutely
-                blown away by the reviews of Cannaray oil.
-                The information and range of high-quality
-                products were amazing.
+              <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
+                J'ai cherché sur de nombreux sites et j'étais absolument
+                époustouflé par les critiques de l’huile Cannaray.
+                Les informations et la gamme de produits de haute qualité
+                les produits étaient incroyables.
               </p>
             </div>
           </div>
@@ -844,10 +845,10 @@
         <div class="col-auto">
           <div class="testi-style1">
             <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-              <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+              <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
-            <span class="testi-author">By <a href="#">Thomas Willimes</a></span>
-            <h3 class="testi-title">Best Protein i have Ever</h3>
+            <span class="testi-author">Par<a href="#">Thomas Willimes</a></span>
+            <h3 class="testi-title">La meilleure protéine que j'ai jamais eu</h3>
             <div class="testi-content">
               <div class="testi-image">
                 <img class="img1" src="assets/img/testimonials/testi-1-3.png" alt="testimonials">
@@ -855,11 +856,11 @@
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">I've been taking CBD oil now for 2 years.
-                Searched lots of sites and was absolutely
-                blown away by the reviews of Cannaray oil.
-                The information and range of high-quality
-                products were amazing.
+              <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
+                J'ai cherché sur de nombreux sites et j'étais absolument
+                époustouflé par les critiques de l’huile Cannaray.
+                Les informations et la gamme de produits de haute qualité
+                les produits étaient incroyables.
               </p>
             </div>
           </div>
@@ -877,8 +878,8 @@
             <div class="sec-icon">
               <img src="assets/img/icons/s-1-1.png" alt="icon">
             </div>
-            <span class="sec-subtitle">News & Updates</span>
-            <h2 class="sec-title">Recent Articles</h2>
+            <span class="sec-subtitle">Nouvelles et mises à jour</span>
+            <h2 class="sec-title">Articles récents</h2>
           </div>
         </div>
       </div>
@@ -888,15 +889,15 @@
             <div class="blog-img">
               <img src="assets/img/blog/blog-1-1.jpg" alt="Blog Image" class="img w-100">
             </div>
-            <span class="blog-date">24 <span>Feb, 2022</span></span>
+            <span class="blog-date">24 <span>Fev, 2022</span></span>
             <div class="blog-content">
               <div class="blog-meta">
-                <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
-                <a class="blog-meta-icon" href="blog.html" tabindex="0"><i class="fas fa-comments"></i> 14 Comments</a>
+                <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
+                <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
               </div>
               <h3 class="blog-title h5">
-                <a href="blog-details.html" tabindex="0">
-                  Options For a Cannabis Education in All Countries
+                <a href="blog-details" tabindex="0"> 
+                Options pour une éducation au cannabis dans tous les pays
                 </a>
               </h3>
             </div>
@@ -907,15 +908,15 @@
             <div class="blog-img">
               <img src="assets/img/blog/blog-1-2.jpg" alt="Blog Image" class="img w-100">
             </div>
-            <span class="blog-date">24 <span>Feb, 2022</span></span>
+            <span class="blog-date">24 <span>Fev, 2022</span></span>
             <div class="blog-content">
               <div class="blog-meta">
-                <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
-                <a class="blog-meta-icon" href="blog.html" tabindex="0"><i class="fas fa-comments"></i> 14 Comments</a>
+                <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
+                <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
               </div>
               <h3 class="blog-title h5">
-                <a href="blog-details.html" tabindex="0">
-                  How Does A Lotion Containing CBD Help Your Skin?
+                <a href="blog-details" tabindex="0">
+                Comment une lotion contenant du CBD aide-t-elle votre peau ?
                 </a>
               </h3>
             </div>
@@ -926,15 +927,15 @@
             <div class="blog-img">
               <img src="assets/img/blog/blog-1-3.jpg" alt="Blog Image" class="img w-100">
             </div>
-            <span class="blog-date">24 <span>Feb, 2022</span></span>
+            <span class="blog-date">24 <span>Fev, 2022</span></span>
             <div class="blog-content">
               <div class="blog-meta">
-                <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
-                <a class="blog-meta-icon" href="blog.html" tabindex="0"><i class="fas fa-comments"></i> 14 Comments</a>
+                <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
+                <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
               </div>
               <h3 class="blog-title h5">
-                <a href="blog-details.html" tabindex="0">
-                  Why CBD Product’s Ingredients List Must Be Examined?
+                <a href="blog-details" tabindex="0">
+                Pourquoi la liste des ingrédients des produits CBD doit-elle être examinée ?
                 </a>
               </h3>
             </div>
@@ -944,7 +945,7 @@
       <div class="row justify-content-center">
         <div class="col-auto">
           <div class="d-inline-flex pt-30">
-            <a href="blog.html" class="vs-btn style2">View All Blog</a>
+            <a href="blog" class="vs-btn style2">Voir tout les articles</a>
           </div>
         </div>
       </div>
@@ -984,5 +985,5 @@
 </body>
 
 
-<!-- Mirrored from html.vecurosoft.com/cannabo/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:41:08 GMT -->
+<!-- Mirrored from html.vecurosoft.com/cannabo/demo/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:41:08 GMT -->
 </html>

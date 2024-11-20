@@ -7,7 +7,7 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
+                  <a href="index"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
                 </div>
                 <p class="footer-text">Aliquet eget sit amet tellus cras adipiscing
                   enim eu turpis. Hac habitasse platea dictu
@@ -68,15 +68,15 @@
               <h3 class="widget_title">Useful Links</h3>
               <div class="footer-menu--style">
                 <ul>
-                  <li><a href="about.html">Our Process</a></li>
-                  <li><a href="index.html">Payments</a></li>
-                  <li><a href="contact.html">Special Offers</a></li>
-                  <li><a href="faq.html">Shipping</a></li>
-                  <li><a href="blog.html">Regulations</a></li>
-                  <li><a href="index-2.html">Product Returns</a></li>
-                  <li><a href="contact.html">About Us</a></li>
-                  <li><a href="project.html">FAQ</a></li>
-                  <li><a href="services.html">Our Team</a></li>
+                  <li><a href="about">Our Process</a></li>
+                  <li><a href="index">Payments</a></li>
+                  <li><a href="contact">Special Offers</a></li>
+                  <li><a href="faq">Shipping</a></li>
+                  <li><a href="blog">Regulations</a></li>
+                  <li><a href="index-2">Product Returns</a></li>
+                  <li><a href="contact">About Us</a></li>
+                  <li><a href="project">FAQ</a></li>
+                  <li><a href="services">Our Team</a></li>
                 </ul>
               </div>
             </div>
@@ -89,7 +89,7 @@
       <div class="container">
         <div class="row g-3 justify-content-center justify-content-xxl-between align-items-center">
           <div class="col-lg-auto">
-            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index.html">Cannabo 2024</a> . All
+            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index">Cannabo 2024</a> . All
               rights reserved. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
           </div>
           <div class="col-lg-auto">
@@ -101,8 +101,8 @@
             <div class="widget widget_nav_menu footer-widget">
               <div class="menu-all-pages-container">
                 <ul class="menu justify-content-center justify-content-lg-end ">
-                  <li><a href="contact.html">Terms and Conditions</a></li>
-                  <li><a href="contact.html">Privacy Policy</a></li>
+                  <li><a href="contact">Terms and Conditions</a></li>
+                  <li><a href="contact">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -121,22 +121,21 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="assets/img/logo-white.png" alt="Cannabo" class="logo"></a>
+                  <a href="index"><img src="assets/img/logo-white.png" alt="Cannabo" class="logo"></a>
                 </div>
-                <p class="footer-text style3">Aliquet eget sit amet tellus cras adipiscing
-                  enim eu turpis. Hac habitasse platea dictu
-                  mst quisque.</p>
+                <p class="footer-text style3">Cannabo est une entreprise spécialisée dans la vente de produits dérivés CBD, nos produits sont conçus pour des utilisations médicales et bien-être.
+                 </p>
                 <div class="footer-social style3">
-                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
-                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="<?=$lien_facebook?>"><i class="fab fa-facebook-f"></i></a>
+                  <a href="<?=$lien_twitter?>"><i class="fab fa-twitter"></i></a>
+                  <a href="<?=$instagram?>"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="widget footer-widget">
-              <h3 class="widget_title style3">Contact Information</h3>
+              <h3 class="widget_title style3">Information de contacts</h3>
               <div class="footer-info style3">
                 <div class="footer-info__icon">
                   <i>
@@ -145,7 +144,7 @@
                 </div>
                 <div class="media-body">
                   <div class="footer-info__link">
-                    <p>New Town Western King Street, 5th Avenue, New York</p>
+                    <p><?= $region. " ".$quartier. " " .$ville ?> </p>
                   </div>
                 </div>
               </div>
@@ -156,9 +155,9 @@
                                 </i>
                 </div>
                 <div class="media-body">
-                  <span class="footer-info__label">Phone No:</span>
+                  <span class="footer-info__label">Numéro de téléphone:</span>
                   <div class="footer-info__link">
-                    <a href="tel:+1800-2355-2356">1800-2355-2356</a>
+                    <a href="tel:+1800-2355-2356"><?=$telephone?></a>
                   </div>
                 </div>
               </div>
@@ -169,9 +168,9 @@
                                 </i>
                 </div>
                 <div class="media-body">
-                  <span class="footer-info__label">Email Address:</span>
+                  <span class="footer-info__label">Adresse email:</span>
                   <div class="footer-info__link">
-                    <a href="mailto:username@domain.com">username@domain.com</a>
+                    <a href="mailto:<?= $emal_entreprise?>"><?=$emal_entreprise?></a>
                   </div>
                 </div>
               </div>
@@ -179,18 +178,19 @@
           </div>
           <div class="col-lg-4">
             <div class="widget footer-widget">
-              <h3 class="widget_title style3">Useful Links</h3>
+              <h3 class="widget_title style3">Liens utiles</h3>
               <div class="footer-menu--style style3">
                 <ul>
-                  <li><a href="about.html">Our Process</a></li>
-                  <li><a href="index.html">Payments</a></li>
-                  <li><a href="contact.html">Special Offers</a></li>
-                  <li><a href="faq.html">Shipping</a></li>
-                  <li><a href="blog.html">Regulations</a></li>
-                  <li><a href="index-2.html">Product Returns</a></li>
-                  <li><a href="contact.html">About Us</a></li>
-                  <li><a href="project.html">FAQ</a></li>
-                  <li><a href="services.html">Our Team</a></li>
+                  <li><a href="home">Acceuil</a></li>
+                  <li><a href="about">À propos</a></li>
+                  <li><a href="product">Boutique</a></li>
+                  <li><a href="contact">Contact</a></li>
+                  <!--
+                  <li><a href="blog">Regulations</a></li>
+                  <li><a href="index-2">Product Returns</a></li>
+                  <li><a href="contact">About Us</a></li>
+                  <li><a href="project">FAQ</a></li>
+                  <li><a href="services">Our Team</a></li> -->
                 </ul>
               </div>
             </div>
@@ -205,9 +205,9 @@
       <div class="container">
         <div class="row g-3 justify-content-center justify-content-xxl-between align-items-center">
           <div class="col-lg-auto">
-            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index.html">Cannabo
-                2024</a> . All
-              rights reserved. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index">Cannabo
+                2024</a> . Tous
+                droits réservés. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
           </div>
           <div class="col-lg-auto">
             <div class="footer-payment">
@@ -218,8 +218,8 @@
             <div class="widget widget_nav_menu footer-widget style3">
               <div class="menu-all-pages-container">
                 <ul class="menu justify-content-center justify-content-lg-end ">
-                  <li><a href="contact.html"><span>Terms and Conditions</span></a></li>
-                  <li><a href="contact.html"><span>Privacy Policy</span></a></li>
+                  <li><a href="contact"><span>Termes et conditions</span></a></li>
+                  <li><a href="contact"><span>Politique de confidentialité</span></a></li>
                 </ul>
               </div>
             </div>

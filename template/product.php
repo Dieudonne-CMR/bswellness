@@ -65,20 +65,20 @@
   <!--==============================
 	Preloader
 	==============================-->
-  <?php include "includes/header.php" ?>
+  <?php include "includes/header.php"?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="assets/img/bg/b-1-3.png">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$banniere3?>" alt="imagee">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
           <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Product List</h1>
+            <h1 class="breadcumb-title">Liste de produits</h1>
             <div class="breadcumb-menu-wrap">
               <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>Product List</li>
+                <li><a href="home">Acceuil</a></li>
+                <li>Liste de produits</li>
               </ul>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -91,17 +91,17 @@
       <div class="vs-sort-bar">
         <div class="row gap-4 align-items-center">
           <div class="col-md-auto flex-grow-1">
-            <p class="woocommerce-result-count">Showing Items <span>1-25 of 6133</span> results</p>
+            <p class="woocommerce-result-count">Afficher les éléments <span>1-25 sur 6133</span> résultats</p>
           </div>
           <div class="col-md-auto">
             <form class="woocommerce-ordering" method="get">
               <select name="orderby" class="orderby" aria-label="Shop order" style="display: none;">
-                <option value="recent_product" selected="selected">Recently Added</option>
-                <option value="popularity">Sort by popularity</option>
-                <option value="rating">Sort by average rating</option>
-                <option value="date">Sort by latest</option>
-                <option value="price">Sort by price: low to high</option>
-                <option value="price-desc">Sort by price: high to low</option>
+                <option value="recent_product" selected="selected">Récemment ajouté</option>
+                <option value="popularity">Trier par popularité</option>
+                <option value="rating">Trier par note moyenne</option>
+                <option value="date">Trier par dernier</option>
+                <option value="price">Trier par prix : du plus bas au plus élevé</option>
+                <option value="price-desc">Trier par prix : du haut au bas</option>
               </select>
             </form>
           </div>
@@ -124,26 +124,34 @@
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row">
+            <?php foreach($produits as $key=>$produit) :
+              if($key<10){
+              ?>
             <div class="col-lg-6 mb-30">
               <div class="vs-product product-style7">
                 <div class="product-img">
-                  <a href="shop-details.html" tabindex="0"><img src="assets/img/products/p-s-1-1.jpg" alt="Image" class="img"></a>
+                  <a href="product-details/<?=$produit->mat_article?>" tabindex="0"><img src="<?= $image_produit.$produit->lien_img_vedette?>" alt="Image" class="img"></a>
                 </div>
                 <div class="product-content">
                   <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                    <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                    <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
                   </div>
                   <h3 class="product-title">
-                    <a href="shop-details.html" tabindex="0">
-                      Exploring Hemp Extract Infused CBD Cream for Skin Care
+                    <a href="product-details/<?=$produit->mat_article?>" tabindex="0">
+                      <?=$produit->nom_art?>
                     </a>
                   </h3>
-                  <span class="product-weight">CBD 100MG</span>
-                  <span class="product-price">$19.85<del>$23.85</del></span>
+                  <?php $produit->courte_description= strTextLent($produit->courte_description,25) ?>
+                  <span class="product-weight"><?=$produit->courte_description?></span>
+                  <span class="product-price">$<?=$produit->prix_reel?><del>$<?=$produit->prix_fictif?></del></span>
                   <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                 </div>
               </div>
             </div>
+            <?php }else{
+              break;
+            } endforeach ?>
+            <?php /*
             <div class="col-lg-6 mb-30">
               <div class="vs-product product-style7">
                 <div class="product-img">
@@ -324,6 +332,7 @@
                 </div>
               </div>
             </div>
+               */ ?>
           </div>
           <div class="row justify-content-center">
             <div class="col-auto">
@@ -340,27 +349,34 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <div class="row">
+            <?php $i=10;
+            while ($i<23){
+            ?>
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="vs-product product-style6">
                 <div class="product-img">
-                  <a href="shop-details.html"><img src="assets/img/products/p-1-1.png" alt="Image" class="img w-100"></a>
-                  <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+                  <a href="product-details/<?=$produits[$i]->mat_article?>"><img src="<?=$image_produit.$produits[$i]->$image_produit?>" alt="Image" class="img w-100"></a>
+                  <a href="product-details/<?=$produits[$i]->mat_article?>" class="product-tag2">En rupture de stock</a>
                 </div>
                 <div class="product-content">
                   <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                    <span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span>
+                    <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
                   </div>
-                  <h3 class="product-title"><a href="shop-details.html">Full Spectrum CBD Oil
-                      1000 mg (10%)</a></h3>
-                  <span class="product-cate">CBD 100MG</span>
-                  <span class="product-price">$39.00</span>
+                  <h3 class="product-title"><a href="product-details/<?=$produits[$i]->mat_article?>"><?=$produits[$i]->nom_art?></a></h3>
+                  <?php $produits[$i]->courte_description= strTextLent($produits[$i]->courte_description,25) ?>
+                  <span class="product-cate"><?=$produits[$i]->courte_description?></span>
+                  <span class="product-price"><?=$produits[$i]->prix_reel?></span>
                   <div class="product-actions">
-                    <a href="cart.html" class="vs-btn">Add to Cart</a>
+                    <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                     <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+            <?php $i++;
+            }
+            ?>
+            <?php /*
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="vs-product product-style6">
                 <div class="product-img">
@@ -585,6 +601,7 @@
                 </div>
               </div>
             </div>
+            */ ?>
           </div>
           <div class="row justify-content-center">
             <div class="col-auto">
