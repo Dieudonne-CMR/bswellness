@@ -67,7 +67,7 @@
 	==============================-->
   <?php include "includes/header.php"?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$banniere3?>" alt="imagee">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$image_banniere.$banniere3?>" alt="imagee">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
@@ -132,7 +132,7 @@
               <div class="vs-product product-style7">
 
                 <div class="product-img"  >
-                  <a href="product-details/<?=$produit->mat_article?>" tabindex="0"><img src="<?= $image_produit.$produit->lien_img_vedette?>" alt="Image" class="img"></a>
+                  <a href="product-details/<?=$produit->mat_article?>" tabindex="0"><img src="<?= $image_produit.$produit->lien_img_vedette?>"style="hight:240px; width:240px;" alt="Image" class="img"></a>
                 </div>
                 <div class="product-content">
                   <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
