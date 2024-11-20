@@ -62,7 +62,7 @@
   <!--********************************
    		Code Start From Here 
 	******************************** -->
-<?php include "includes/header.php";?>
+<?php include "includes/header.php"?>
 
   <!-- Hero Area -->
   <section class="hero-style1">
@@ -82,10 +82,10 @@
               <div class="hero-content">
                 <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere1 ?></h1>
                 <p class="hero-text hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere1 ?></p>
-                <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
+               <?php /* <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Extrait de plante entière de chanvre.
-              </span>
+              </span> */ ?>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="product" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
@@ -99,9 +99,9 @@
                 <div class="hero-certificate">
                   <img src="assets/img/logos/l-1-1.png" alt="logo">
                 </div>
-                <div class="hero-leaf">
+               <?php /* <div class="hero-leaf">
                   <img src="assets/img/hero/h-1-2.png" alt="">
-                </div>
+                </div> */ ?>
               </div>
             </div>
           </div>
@@ -113,10 +113,10 @@
               <div class="hero-content">
                 <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere2 ?></h1>
                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere2 ?></p>
-                <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
+              <?php /*  <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Extrait de plante entière de chanvre.
-              </span>
+              </span> */ ?>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="product" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
@@ -144,10 +144,10 @@
               <div class="hero-content">
                 <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere3 ?></h1>
                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere3 ?></p>
-                <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
+                <?php /*  <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Extrait de plante entière de chanvre.
-              </span>
+              </span> */ ?>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="products-grid" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
@@ -313,15 +313,15 @@
               <span class="sec-subtitle">Bienvenue à Canobbo</span>
               <h2 class="sec-title"><?= $apropos_entreprise ?></h2>
             </div> 
-            <div class="about-body">
-             <!-- <p class="about-text">We Provide High Quality And Certified Products</p>-->
+              <?php /*  <div class="about-body">
+             <p class="about-text">We Provide High Quality And Certified Products</p>
               <div class="list-style1">
                 <ul>
                   <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
                   <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
                   <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
                 </ul>
-              </div> 
+              </div>  */?>
             </div> 
           </div>
         </div>
