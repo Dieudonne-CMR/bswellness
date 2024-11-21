@@ -111,7 +111,6 @@
       </div>
     </div>
 </section> */?>
-
 <section class="footer-layout3">
     <div class="widget-area style3" data-bg-src="assets/img/bg/footer-bg-3-1.png">
       <img src="assets/img/leafs/footer-3-1.png" alt="footer leafs" class="footer-overlay">
@@ -123,7 +122,7 @@
                 <div class="footer-logo">
                   <a href="index"><img src="assets/img/logo-white.png" alt="Cannabo" class="logo"></a>
                 </div>
-                <p class="footer-text style3">Cannabo est une entreprise spécialisée dans la vente de produits dérivés CBD, nos produits sont conçus pour des utilisations médicales et bien-être.
+                <p class="footer-text style3"><?=$decription_entreprise?>
                  </p>
                 <div class="footer-social style3">
                   <a href="<?=$lien_facebook?>"><i class="fab fa-facebook-f"></i></a>
@@ -205,16 +204,16 @@
       <div class="container">
         <div class="row g-3 justify-content-center justify-content-xxl-between align-items-center">
           <div class="col-lg-auto">
-            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index">Cannabo
-                2024</a> . Tous
-                droits réservés. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+            <p class="copyright-text text-center text-lg-start">Copyright ©  Faire  Par <a href="https://akilaweb.net">Akila Web Factory</a> . Tous
+                droits réservés. <a href="https://<?=$nom_entreprise?>/home"><?=$nom_entreprise?></a></p>
           </div>
           <div class="col-lg-auto">
-            <div class="footer-payment">
+           <?php /* <div class="footer-payment">
               <img src="assets/img/others/payment.png" alt="payment">
-            </div>
+            </div> */ ?>
           </div>
-          <div class="col-lg-auto">
+          <div class="col-lg-auto"> 
+            <?php /*           
             <div class="widget widget_nav_menu footer-widget style3">
               <div class="menu-all-pages-container">
                 <ul class="menu justify-content-center justify-content-lg-end ">
@@ -222,7 +221,8 @@
                   <li><a href="contact"><span>Politique de confidentialité</span></a></li>
                 </ul>
               </div>
-            </div>
+            </div> 
+            */ ?>
           </div>
         </div>
       </div>

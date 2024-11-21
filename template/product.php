@@ -4,6 +4,11 @@
 
 <!-- Mirrored from html.vecurosoft.com/cannabo/demo/products-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:53:59 GMT -->
 <head>
+  <?php 
+  if(!empty($cat)){
+    $baseURL = '../'; echo "<base href='$baseURL'>";
+  }
+  ?>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Our Products 1 </title>
@@ -95,14 +100,18 @@
           </div>
           <div class="col-md-auto">
             <form class="woocommerce-ordering" method="get">
-              <select name="orderby" class="orderby" aria-label="Shop order" style="display: none;">
-                <option value="recent_product" selected="selected">Récemment ajouté</option>
-                <option value="popularity">Trier par popularité</option>
-                <option value="rating">Trier par note moyenne</option>
-                <option value="date">Trier par dernier</option>
-                <option value="price">Trier par prix : du plus bas au plus élevé</option>
-                <option value="price-desc">Trier par prix : du haut au bas</option>
-              </select>
+             <select name="orderby" class="orderby" id="mySelect" aria-label="Shop order" onchange="navigateToLink()">
+             <option value="recent_product" selected="selected">Catégories de produits</option>
+             <?php foreach($categorie as $cate) :?> 
+             <option value="product/<?=$cate->mat_categorie?>"><?=$cate->libelle?></option>
+             <?php endforeach ?>
+             <?php /*
+             <option value="rating">Trier par note moyenne</option>
+             <option value="date">Trier par dernier</option>
+             <option value="price">Trier par prix : du plus bas au plus élevé</option>
+             <option value="price-desc">Trier par prix : du haut au bas</option>
+              */ ?>
+             </select>
             </form>
           </div>
           <div class="col-md-auto">
@@ -126,7 +135,8 @@
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row">
             <?php foreach($produits as $key=>$produit) :
-              if($key<10){
+            $j=0; $k=count($produits);
+            if((!empty($cat)) && ($j<$k) && ($produit->mat_categorie_art === $cat)){
               ?>
             <div class="col-lg-6 mb-30">
               <div class="vs-product product-style7">
@@ -143,14 +153,39 @@
                       <?=$produit->nom_art?>
                     </a>
                   </h3>
-                  <?php $produit->courte_description= strTextLent($produit->courte_description,25) ?>
+                  <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
                   <span class="product-weight"><?=$produit->courte_description?></span>
-                  <span class="product-price">$<?=$produit->prix_reel?><del>$<?=$produit->prix_fictif?></del></span>
+                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
                   <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                 </div>
               </div>
             </div>
-            <?php }else{
+            <?php $j++;}            
+            else if(empty($cat)){ ?>
+            <div class="col-lg-6 mb-30">
+              <div class="vs-product product-style7">
+
+                <div class="product-img"  >
+                  <a href="product-details/<?=$produit->mat_article?>" tabindex="0"><img src="<?= $image_produit.$produit->lien_img_vedette?>"style="hight:240px; width:240px;" alt="Image" class="img"></a>
+                </div>
+                <div class="product-content">
+                  <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+                    <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
+                  </div>
+                  <h3 class="product-title">
+                    <a href="product-details/<?=$produit->mat_article?>" tabindex="0">
+                      <?=$produit->nom_art?>
+                    </a>
+                  </h3>
+                  <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
+                  <span class="product-weight"><?=$produit->courte_description?></span>
+                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
+                  <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                </div>
+              </div>
+            </div>
+            <?php
+            } else{
               break;
             } endforeach ?>
             <?php /*
@@ -351,23 +386,24 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
           <div class="row">
-            <?php $i=10;
-            while ($i<23){
-            ?>
+          <?php foreach($produits as $key=>$produit) :
+            $j=0; $k=count($produits);
+            if((!empty($cat)) && ($j<$k) && ($produit->mat_categorie_art === $cat)){
+              ?>
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="vs-product product-style6">
                 <div class="product-img">
-                  <a href="product-details/<?=$produits[$i]->mat_article?>"><img src="<?=$image_produit.$produits[$i]->$image_produit?>" alt="Image" class="img w-100"></a>
-                  <a href="product-details/<?=$produits[$i]->mat_article?>" class="product-tag2">En rupture de stock</a>
+                  <a href="product-details/<?=$produit->mat_article?>"><img src="<?=$image_produit.$produit->lien_img_vedette?>" alt="Image" class="img w-100"></a>
+                  <?php /*<a href="product-details/<?=$produit->mat_article?>" class="product-tag2">En rupture de stock</a> */ ?>
                 </div>
                 <div class="product-content">
                   <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                     <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
                   </div>
-                  <h3 class="product-title"><a href="product-details/<?=$produits[$i]->mat_article?>"><?=$produits[$i]->nom_art?></a></h3>
-                  <?php $produits[$i]->courte_description= strTextLent($produits[$i]->courte_description,25) ?>
-                  <span class="product-cate"><?=$produits[$i]->courte_description?></span>
-                  <span class="product-price"><?=$produits[$i]->prix_reel?></span>
+                  <h3 class="product-title"><a href="product-details/<?=$produit->mat_article?>"><?=$produit->nom_art?></a></h3>
+                  <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
+                  <span class="product-cate"><?=$produit->courte_description?></span>
+                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?></span>
                   <div class="product-actions">
                     <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                     <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
@@ -375,9 +411,32 @@
                 </div>
               </div>
             </div>
-            <?php $i++;
-            }
-            ?>
+            <?php $j++;
+            }else if(empty($cat)){ ?>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="vs-product product-style6">
+                <div class="product-img">
+                  <a href="product-details/<?=$produit->mat_article?>"><img src="<?=$image_produit.$produit->lien_img_vedette?>" alt="Image" class="img w-100"></a>
+                  <?php /*<a href="product-details/<?=$produit->mat_article?>" class="product-tag2">En rupture de stock</a> */ ?>
+                </div>
+                <div class="product-content">
+                  <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+                    <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
+                  </div>
+                  <h3 class="product-title"><a href="product-details/<?=$produit->mat_article?>"><?=$produit->nom_art?></a></h3>
+                  <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
+                  <span class="product-cate"><?=$produit->courte_description?></span>
+                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?></span>
+                  <div class="product-actions">
+                    <a href="cart.html" class="vs-btn">Ajouter au panier</a>
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php }else{
+              break;
+            } endforeach?>
             <?php /*
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="vs-product product-style6">
@@ -651,6 +710,12 @@
   <script src="assets/js/jquery-ui.min.js"></script>
   <!-- Main Js File -->
   <script src="assets/js/main.js"></script>
+  <!--fonction js pour permettre de transformer la valeur de l'atribut value en lien -->
+  <script> function navigateToLink() { 
+  var selectElement = document.getElementById("mySelect");
+  var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+  if (selectedValue) { window.location.href = selectedValue; } } 
+  </script>
 </body>
 
 

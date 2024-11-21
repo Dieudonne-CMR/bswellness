@@ -93,7 +93,7 @@
         <div class="col-lg-6 mb-30">
           <div class="img-box1">
             <div class="img1">
-              <img class="img" src="assets/img/about/c-about-1-1.jpg" alt="about 1 1">
+              <img class="img" src="<?=$image_banniere.$image_about?>" alt="about 1 1">
             </div>
             <div class="video-thumb1">
               <img class="img" src="<?=$image_banniere.$banniere1?>" alt="about 2 2">

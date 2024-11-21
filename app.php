@@ -21,6 +21,7 @@ if(@$url[0]=='home' || @$url[0]==''):
     $article = recup_article();
     $category = recup_categories();
     $produits = recup_produict();
+    $devise = info_boutique();
     include_once("template/home.php");
 endif;
 //--------Route page Apropos
@@ -32,14 +33,19 @@ endif;
 if(@$url[0]=='product'):
     $produits = recup_produict();
     $categorie = recup_categories();
-    // if(!emplty($produits))
-    include_once("template/$url[0].php");
+    $devise1 = info_boutique();
+    $cat = strip_tags(@$url[1]);
+    if(!empty($cat)){       
+        include_once("template/$url[0].php");            
+        }else{
+        include_once("template/$url[0].php"); 
+        }  
 endif;
 
 //------- Route page detail produit
 if(@$url[0]=='product-details'):
     $mat_produit= strip_tags(@$url[1]);
-
+    $devise2 = info_boutique();
     $detail_pro= recup_produict_detail($mat_produit);
     if(!empty($detail_pro)):
         $nom_produit        =    $detail_pro[0]->nom_art;
