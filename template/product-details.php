@@ -1,7 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-
-
 <!-- Mirrored from html.vecurosoft.com/cannabo/demo/shop-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:53:59 GMT -->
   <head>
   <meta charset="utf-8">
@@ -121,7 +119,7 @@
             </div>
             <h2 class="product-title"><?=$nom_produit?></h2>
             <span class="product-ml">Fort / 4% / 30ml</span>
-            <p class="product-price"><?=$prix_reel?>$ <del><?=$prix_fictif?></del></p>
+            <p class="product-price"><?=$prix_reel."".$devise2[0]->code_iso_devise?> <del><?=$prix_fictif."".$devise2[0]->code_iso_devise?></del></p>
             <div class="actions">
               <div class="quantity">
                 <label for="quantity" class="screen-reader-text">Quantité:</label>
@@ -164,9 +162,7 @@
                 rel="tag">Memp</a>
             </span>
             </div>
-            <div class="product-getway">
-              <img src="assets/img/others/payment-2.png" alt="cards">
-            </div>
+            
           </div>
         </div>
       </div>
@@ -196,14 +192,15 @@
           <div class="vs-product product-style6">
             <div class="product-img">
               <a href="product-details/<?=$detail_pro[$i]->mat_article?>"><img src="<?=$image_produit.$detail_pro[$i]->lien_img_vedette?>" alt="Image" class="img w-100"></a>
-              <a href="product-details/<?=$detail_pro[$i]->mat_article?>" class="product-tag2">En rupture de stock</a>
+              
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
               </div>
               <h3 class="product-title"><a href="product-details/<?=$detail_pro[$i]->mat_article?>"><?=$detail_pro[$i]->nom_art?></a></h3>
-              <span class="product-cate">CBD 100MG</span>
+              <?php $detail_pro[$i]->courte_description= strTextLent($detail_pro[$i]->courte_description,80) ?>
+              <span class="product-cate"><?=$detail_pro[$i]->courte_description?></span>
               <span class="product-price"><?=$detail_pro[$i]->prix_reel?></span>
               <div class="product-actions">
                 <a href="cart.html" class="vs-btn">Ajouter au panier</a>

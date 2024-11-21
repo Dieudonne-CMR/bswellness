@@ -75,7 +75,7 @@
             <h1 class="breadcumb-title">Contact</h1>
             <div class="breadcumb-menu-wrap">
               <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home">Acceuil</a></li>
                 <li>Contact</li>
               </ul>
             </div>
@@ -94,9 +94,9 @@
             <div class="sec-icon">
               <img src="assets/img/icons/s-1-1.png" alt="icon">
             </div>
-            <h2 class="sec-title">We Are Here For You!</h2>
-            <p>If your query is relating to finding our more information about CBD products then please
-              feel free to visit the following resources:
+            <h2 class="sec-title">Nous sommes là pour vous !</h2>
+            <p>Si votre question concerne la recherche d'informations 
+              supplémentaires sur les produits CBD, n'hésitez pas à consulter les ressources suivantes :
             </p>
           </div>
         </div>
@@ -104,31 +104,30 @@
       <div class="contact-wrapper">
         <div class="row gx-0">
           <div class="col-lg-4 contact-box" data-bg-src="assets/img/pattern/pattern-4-1.png">
-            <h3 class="contact-box__title">Head Office</h3>
+            <h3 class="contact-box__title">Siège social</h3>
             <div class="contact-box__item">
               <div class="contact-box__icon"><i class="far fa-location"></i></div>
               <div class="media-body">
                 <p class="contact-box__info">
-                  New Town Western King Street,
-                  5th Avenue, New York
+                <?= $region. " ".$quartier. " " .$ville ?> 
                 </p>
               </div>
             </div>
             <div class="contact-box__item">
               <div class="contact-box__icon"><i class="far fa-phone-alt"></i></div>
               <div class="media-body">
-                <h4 class="contact-box__label">Phone No:</h4>
+                <h4 class="contact-box__label">Numéro de téléphone :</h4>
                 <p class="contact-box__info">
-                  <a href="tel:+310259121563">1800-2355-2356</a>
+                  <a href="tel:<?=$telephone?>"><?=$telephone?></a>
                 </p>
               </div>
             </div>
             <div class="contact-box__item">
               <div class="contact-box__icon"><i class="far fa-envelope"></i></div>
               <div class="media-body">
-                <h4 class="contact-box__label">Email Address:</h4>
+                <h4 class="contact-box__label">Adresse email:</h4>
                 <p class="contact-box__info">
-                  <a href="tel:+310259121563">username@domainname.com</a>
+                  <a href="tel:<?=$emal_entreprise?>"><?=$emal_entreprise?></a>
                 </p>
               </div>
             </div>
@@ -136,40 +135,40 @@
               <div class="contact-box__icon"><i class="far fa-clock"></i></div>
               <div class="media-body">
                 <p class="contact-box__info">
-                  <span>Mon-Fri: 10am - 3pm</span>
-                  <span>Sat-Sun: Closed</span>
+                  <span>  Lun-Ven: 10h - 15h</span>
+                  <span>Sam-Dim: Fermer</span>
                 </p>
               </div>
             </div>
             <div class="social-links pt-10">
-              <span class="links-title">Social Networking:</span>
+              <span class="links-title">Réseaux sociaux :</span>
               <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="<?=$lien_facebook?>"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="<?=$lien_twitter?>"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="<?=$instagram?>"><i class="fab fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-7 form-style2">
             <form class="ajax-contact" action="https://html.vecurosoft.com/cannabo/demo/mail.php" method="POST">
-              <h3 class="contact-box__title">General Query</h3>
-              <p class="contact-box__text">For all enquires, please contact us and one of our delightful team will be be
-                happy to help.</p>
+              <h3 class="contact-box__title">Requête générale</h3>
+              <p class="contact-box__text">Pour toute demande de renseignements, veuillez nous contacter et 
+                l'un des membres de notre charmante équipe se fera un plaisir de vous aider.</p>
               <div class="row gx-20">
                 <div class="col-md-6 form-group">
-                  <input class="form-control" type="text" name="name" id="name" placeholder="Your Name">
+                  <input class="form-control" type="text" name="name" id="name" placeholder="Votre nom">
                 </div>
                 <div class="col-md-6 form-group">
-                  <input class="form-control" type="email" name="email" id="email" placeholder="Email Address">
+                  <input class="form-control" type="email" name="email" id="email" placeholder="Adresse email">
                 </div>
                 <div class="col-md-12 form-group">
-                  <input class="form-control" type="tel" name="tel" id="tel" placeholder="Phone No">
+                  <input class="form-control" type="tel" name="tel" id="tel" placeholder="Numéro de téléphone">
                 </div>
                 <div class="col-12 form-group">
-                  <textarea class="form-control" name="message" id="message" placeholder="Type Your Message"></textarea>
+                  <textarea class="form-control" name="message" id="message" placeholder="Entrez votre message"></textarea>
                 </div>
                 <div class="col-12">
-                  <button class="vs-btn style1">Submit Message<i class="far fa-arrow-right"></i></button>
+                  <button class="vs-btn style1">Envoyer le message<i class="far fa-arrow-right"></i></button>
                 </div>
               </div>
             </form>

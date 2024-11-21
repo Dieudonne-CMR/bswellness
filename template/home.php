@@ -167,7 +167,6 @@
                 </div> */ ?>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -384,16 +383,16 @@
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
             <div class="product-img" style="border-radius:15px;">
-              <a href="product-details/<?=$value->mat_article?>"><img src="<?= $image_produit.$value->lien_img_vedette?>" style="border-radius:15px;" alt="Image" class="img w-100"></a>
-              <a href="product-details/<?=$value->mat_article?>" class="product-tag2">30% OFF</a>
+              <a href="product-details/<?=$value->mat_article?>"><img src="<?= $image_produit.$value->lien_img_vedette?>" style="border-radius:15px;" alt="Image" class="img w-100"></a>              
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté<strong class="rating">5</strong> sur 5</span>
               </div>
               <h3 class="product-title"><a href="product-details/<?=$value->mat_article?>"><?= $value->nom_art?></a></h3>
-              <span class="product-cate">CBD 100MG</span>
-              <span class="product-price"><?= $value->prix_reel?></span>
+              <?php $value->courte_description= strTextLent($value->courte_description,50) ?>
+              <span class="product-cate"><?=$value->courte_description?></span>
+              <span class="product-price"><?= $value->prix_reel."".$devise[0]->code_iso_devise?></span>
               <div class="product-actions">
                 <a href="cart" class="vs-btn">Ajouter au panier</a>
                 <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
