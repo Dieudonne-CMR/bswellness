@@ -67,7 +67,7 @@
 	==============================-->
   <?php include "includes/header.php" ?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$banniere2?>">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$image_banniere.$banniere2?>">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
@@ -96,7 +96,7 @@
               <img class="img" src="assets/img/about/c-about-1-1.jpg" alt="about 1 1">
             </div>
             <div class="video-thumb1">
-              <img class="img" src="<?= $banniere1 ?>" alt="about 2 2">
+              <img class="img" src="<?=$image_banniere.$banniere1?>" alt="about 2 2">
               <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style7 popup-video" tabindex="0"><i
                 class="fas fa-play"></i></a>
             </div>
@@ -112,13 +112,13 @@
              <!-- <p class="about-text">There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form,
                 by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage
                 of variations of passages of lorem.</p> -->
-              <div class="list-style1">
+             <?php /* <div class="list-style1">
                 <ul>
                   <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
                   <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
                   <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
                 </ul>
-              </div>
+              </div> */ ?>
             </div>
           </div>
         </div>
@@ -216,12 +216,12 @@
         </div>
         <div class="col-xl-6 col-lg-auto mb-30">
           <div class="img-box7">
-            <img src="assets/img/features/feature-3-1.jpg" alt="feature-img" class="img1">
+            <img src="<?=$image_banniere.$banniere3?>" alt="feature-img" class="img1">
             <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style5 popup-video"><i
               class="fas fa-play"></i></a>
-            <img src="assets/img/leafs/feature-3-2.png" alt="leafs" class="img2">
+            <?php /*<img src="assets/img/leafs/feature-3-2.png" alt="leafs" class="img2">
             <img src="assets/img/leafs/feature-3-3.png" alt="leafs" class="img3">
-            <img src="assets/img/leafs/feature-3-4.png" alt="leafs" class="img4">
+            <img src="assets/img/leafs/feature-3-4.png" alt="leafs" class="img4">  */ ?>
           </div>
         </div>
       </div>

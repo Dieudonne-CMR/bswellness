@@ -73,7 +73,7 @@ $mention3 = @$info_header -> mention3;
 $mention_titre3 = @$info_header -> mention_titre3;
 $mention4 = @$info_header ->mention4;
 $mention_titre4 = @$info_header -> mention_titre4;
-//=======information du fichier api_info_entreprise.php //assets/img/about/about-1-2.jpg
+//=======information du fichier api_info_entreprise.php //
 //------------ Bannieres
 $banniere1  =           @$dataEntreprise->about_image1;
 $banniere2 =            @$dataEntreprise->banniere_image2;

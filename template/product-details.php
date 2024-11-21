@@ -3,8 +3,9 @@
 
 
 <!-- Mirrored from html.vecurosoft.com/cannabo/demo/shop-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:53:59 GMT -->
-<head>
+  <head>
   <meta charset="utf-8">
+  <base href="../">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Our Products 1 </title>
   <meta name="author" content="vecuro">
@@ -53,7 +54,7 @@
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
+</head> 
 
 <body>
   <!--[if lte IE 9]>
@@ -64,10 +65,10 @@
 	******************************** -->
   <!--==============================
 	Preloader
-	============================== assets/img/bg/b-1-3.png-->
+	============================== -->
   <?php include "includes/header.php" ?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$image_produit-> $lien_img_vedette?>">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$image_produit.$lien_img_vedette?>">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
@@ -92,19 +93,19 @@
         <div class="col-lg-6 mb-30">
           <div class="product-slide-row">
             <div class="product-big-img vs-carousel" data-slide-show="1" data-fade="true" data-asnavfor=".product-thumb-slide">
-              <div class="img"><img src="assets/img/products/p-d-1-1.png" alt="Product Image"></div>
+              <div class="img"><img src="<?=$image_produit.$lien_img_vedette?>" alt="Product Image"></div>
               <div class="img"><img src="assets/img/products/p-d-1-2.png" alt="Product Image"></div>
-              <div class="img"><img src="assets/img/products/p-d-1-3.png" alt="Product Image"></div>
+              <div class="img"><img src="assets/img/products/p-d-1-3.png" alt="Product Image"></div> 
             </div>
             <div class="product-thumb-slide vs-carousel" data-slide-show="4" data-md-slide-show="4" data-sm-slide-show="3" data-xs-slide-show="3" data-asnavfor=".product-big-img" data-vertical="false" data-sm-vertical="false">
               <div>
-                <div class="thumb"><img src="assets/img/products/p-d-s-1-1.png" alt="Product Image"></div>
+                <div class="thumb"><img src="<?=$image_produit.$detail_pro[0]->lien_img2 ?>" alt="Product Image"></div>
               </div>
               <div>
-                <div class="thumb"><img src="assets/img/products/p-d-s-1-2.png" alt="Product Image"></div>
+                <div class="thumb"><img src="<?=$image_produit.$detail_pro[0]->lien_img3 ?>" alt="Product Image"></div>
               </div>
               <div>
-                <div class="thumb"><img src="assets/img/products/p-d-s-1-3.png" alt="Product Image"></div>
+                <div class="thumb"><img src="<?=$image_produit.$detail_pro[0]->lien_img4 ?>" alt="Product Image"></div>
               </div>
             </div>
           </div>
@@ -120,7 +121,7 @@
             </div>
             <h2 class="product-title"><?=$nom_produit?></h2>
             <span class="product-ml">Fort / 4% / 30ml</span>
-            <p class="product-price"><?=$prix_reel?> <del><?=$prix_fictif?></del></p>
+            <p class="product-price"><?=$prix_reel?>$ <del><?=$prix_fictif?></del></p>
             <div class="actions">
               <div class="quantity">
                 <label for="quantity" class="screen-reader-text">Quantité:</label>
@@ -182,25 +183,56 @@
     </div>
   </section>
   <!-- Product Details End -->
-  <!-- Related Products -->
+  <!-- Related Products Ajouter des avis-->
   <section class="space-extra-bottom">
     <div class="container">
-      <h3 class="blog-inner-title">Ajouter des avis</h3>
+      <h3 class="blog-inner-title">Produits des mêmes catégories</h3>
       <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
+        <?php $i=0; $k=count($detail_pro); $j=0;
+        while(($i<4) && ($j<$k)){
+          if($detail_pro[0]->mat_categorie_art === $detail_pro[$i]->mat_categorie_art){
+        ?>
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="vs-product product-style6">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-1.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">En rupture de stock</a>
+              <a href="product-details/<?=$detail_pro[$i]->mat_article?>"><img src="<?=$image_produit.$detail_pro[$i]->lien_img_vedette?>" alt="Image" class="img w-100"></a>
+              <a href="product-details/<?=$detail_pro[$i]->mat_article?>" class="product-tag2">En rupture de stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Huile de CBD à spectre complet
-              1000mg (10%)</a></h3>
+              <h3 class="product-title"><a href="product-details/<?=$detail_pro[$i]->mat_article?>"><?=$detail_pro[$i]->nom_art?></a></h3>
               <span class="product-cate">CBD 100MG</span>
-              <span class="product-price"><?=$prix_reel?></span>
+              <span class="product-price"><?=$detail_pro[$i]->prix_reel?></span>
+              <div class="product-actions">
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
+                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php
+       $i++; 
+       $j++;
+       }else{
+        $j++;
+        }        
+         }?>
+        <?php /*
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="vs-product product-style6">
+            <div class="product-img">
+              <a href="shop-details.html"><img src="assets/img/products/p-1-2.png" alt="Image" class="img w-100"></a>
+            </div>
+            <div class="product-content">
+              <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
+              </div> 
+              <h3 class="product-title"><a href="shop-details.html">Thé au chanvre Naturecan
+              Mélangez 20 sachets</a></h3> 
+              <span class="product-cate">CBD 100MG</span>
+              <span class="product-price">$39.00</span>
               <div class="product-actions">
                 <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
@@ -211,39 +243,19 @@
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="vs-product product-style6">
             <div class="product-img">
-              <a href="shop-details.html"><img src="assets/img/products/p-1-2.png" alt="Image" class="img w-100"></a>
-            </div>
-            <div class="product-content">
-              <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
-              </div> 
-              <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea
-                  Blend 20 bags</a></h3> 
-              <span class="product-cate">CBD 100MG</span>
-              <span class="product-price">$39.00</span>
-              <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="vs-product product-style6">
-            <div class="product-img">
               <a href="shop-details.html"><img src="assets/img/products/p-1-3.png" alt="Image" class="img w-100"></a>
-              <a href="shop-details.html" class="product-tag2">Out of Stock</a>
+              <a href="shop-details.html" class="product-tag2">En rupture de stock</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Noté<strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong> Sur 5</span>
               </div>
               <h3 class="product-title"><a href="shop-details.html">Orange Couny CBD
                   E-liquid</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
@@ -256,18 +268,19 @@
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
-                <span style="width:100%">Noté<strong class="rating">5</strong> out of 5</span>
+                <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details.html">Naturecan Hemp Tea Blend</a></h3>
+              <h3 class="product-title"><a href="shop-details.html">Mélange de thé au chanvre Naturecan</a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price">$39.00</span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Add to Cart</a>
+                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+        */?>
       </div>
     </div>
   </section>

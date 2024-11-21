@@ -62,7 +62,7 @@
   <!--********************************
    		Code Start From Here 
 	******************************** -->
-<?php include "includes/header.php";?>
+<?php include "includes/header.php"?>
 
   <!-- Hero Area -->
   <section class="hero-style1">
@@ -82,10 +82,10 @@
               <div class="hero-content">
                 <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere1 ?></h1>
                 <p class="hero-text hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere1 ?></p>
-                <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
+               <?php /* <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Extrait de plante entière de chanvre.
-              </span>
+              </span> */ ?>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="product" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
@@ -93,15 +93,15 @@
               </div>
             </div>
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
-              <div class="hero-img wow fadeInUp" data-wow-delay="0.4s">
-                <img src="assets/img/hero/h-1-1.png" alt="hero image 1">
-                <span class="circle"></span>
+              <div class="hero-img wow fadeInUp" data-wow-delay="0.4s"> 
+              <img src="<?= $image_banniere.$banniere1?>"style="border-radius:15px;" alt="hero image 1">                         
+                <?php /*<span class="circle" style="margin-top:-2%;"></span> */ ?>
                 <div class="hero-certificate">
                   <img src="assets/img/logos/l-1-1.png" alt="logo">
                 </div>
-                <div class="hero-leaf">
+              <?php /* <div class="hero-leaf">
                   <img src="assets/img/hero/h-1-2.png" alt="">
-                </div>
+                </div> */ ?>
               </div>
             </div>
           </div>
@@ -113,10 +113,10 @@
               <div class="hero-content">
                 <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere2 ?></h1>
                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere2 ?></p>
-                <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
+              <?php /*  <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Extrait de plante entière de chanvre.
-              </span>
+              </span> */ ?>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="product" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
@@ -125,14 +125,14 @@
             </div>
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
               <div class="hero-img">
-                <img src="assets/img/hero/h-1-1.png" alt="hero image 1">
-                <span class="circle"></span>
+                <img src="<?= $image_banniere.$banniere2?>" style="border-radius:15px;" alt="hero image 1">
+               <?php /* <span class="circle"></span> */ ?>
                 <div class="hero-certificate">
                   <img src="assets/img/logos/l-1-1.png" alt="logo">
                 </div>
-                <div class="hero-leaf">
+            <?php /* <div class="hero-leaf">
                   <img src="assets/img/hero/h-1-2.png" alt="">
-                </div>
+                </div> */ ?>
               </div>
             </div>
           </div>
@@ -144,10 +144,10 @@
               <div class="hero-content">
                 <h1 class="hero-title wow fadeInUp" data-wow-delay="0.2s"><?= $titre_banniere3 ?></h1>
                 <p class="hero-text wow fadeInUp" data-wow-delay="0.4s"><?= $description_baniere3 ?></p>
-                <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
+                <?php /*  <span class="hero-subtitle wow fadeInUp" data-wow-delay="0.6s">
                 <img src="assets/img/icons/i-1-1.png" alt="icon">
                 1000MG, Extrait de plante entière de chanvre.
-              </span>
+              </span> */ ?>
                 <div class="d-flex wow fadeInUp" data-wow-delay="0.8s">
                   <a href="products-grid" class="vs-btn style1">Visitez la boutique<i
                     class="fas fa-long-arrow-right"></i></a>
@@ -157,14 +157,14 @@
 
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
               <div class="hero-img">
-                <img src="assets/img/hero/h-1-1.png" alt="hero image 1">
-                <span class="circle"></span>
+                <img src="<?= $image_banniere.$banniere3?>" style="border-radius:15px;" alt="hero image 1">
+              <?php /*  <span class="circle"></span> */ ?>
                 <div class="hero-certificate">
-                  <img src="assets/img/logos/l-1-1.png" alt="logo">
+                  <img src="assets/img/logos/l-1-1.png" alt="logo"> 
                 </div>
-                <div class="hero-leaf">
+               <?php /* <div class="hero-leaf">
                   <img src="assets/img/hero/h-1-2.png" alt="">
-                </div>
+                </div> */ ?>
               </div>
             </div>
 
@@ -298,10 +298,10 @@
         <div class="col-lg-6 mb-30">
           <div class="img-box1">
             <div class="img1">
-              <img class="img" src="assets/img/about/c-about-1-1.jpg" alt="about 1 1">
+              <img class="img" src="<?=$image_banniere.$image_about ?>" alt="about 1 1">
             </div>
             <div class="video-thumb1">
-              <img class="img" src="<?= $image_about ?>" alt="about 2 2">
+              <img class="img" src="<?=$image_banniere.$banniere1 ?>" alt="about 2 2">
               <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style7 popup-video" tabindex="0"><i
                 class="fas fa-play"></i></a>
             </div>
@@ -313,15 +313,15 @@
               <span class="sec-subtitle">Bienvenue à Canobbo</span>
               <h2 class="sec-title"><?= $apropos_entreprise ?></h2>
             </div> 
-            <div class="about-body">
-             <!-- <p class="about-text">We Provide High Quality And Certified Products</p>-->
+              <?php /*  <div class="about-body">
+             <p class="about-text">We Provide High Quality And Certified Products</p>
               <div class="list-style1">
                 <ul>
                   <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
                   <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
                   <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
                 </ul>
-              </div> 
+              </div>  */?>
             </div> 
           </div>
         </div>
@@ -383,15 +383,15 @@
           ?> 
         <div class="col-lg-3 col-md-6">
           <div class="vs-product product-style1">
-            <div class="product-img">
-              <a href="shop-details"><img src="<?= $image_produit.$value->lien_img_vedette?>" alt="Image" class="img w-100"></a>
-              <a href="shop-details" class="product-tag2">30% OFF</a>
+            <div class="product-img" style="border-radius:15px;">
+              <a href="product-details/<?=$value->mat_article?>"><img src="<?= $image_produit.$value->lien_img_vedette?>" style="border-radius:15px;" alt="Image" class="img w-100"></a>
+              <a href="product-details/<?=$value->mat_article?>" class="product-tag2">30% OFF</a>
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté<strong class="rating">5</strong> sur 5</span>
               </div>
-              <h3 class="product-title"><a href="shop-details"><?= $value->nom_art?></a></h3>
+              <h3 class="product-title"><a href="product-details/<?=$value->mat_article?>"><?= $value->nom_art?></a></h3>
               <span class="product-cate">CBD 100MG</span>
               <span class="product-price"><?= $value->prix_reel?></span>
               <div class="product-actions">
@@ -659,7 +659,7 @@
         <div class="col-lg-6 mx-auto">
           <div class="img-box2">
             <div class="img-circle" data-bg-src="assets/img/features/feature-1-2.png"></div>
-            <img src="<?=$image_produit.$produits[0]->lien_img_vedette?>" alt="feature image">
+            <img src="<?=$image_produit.$produits[0]->lien_img_vedette?>" style="border-radius:15px;" alt="feature image">
           </div>
         </div>
       </div>
@@ -678,9 +678,9 @@
                   <h3 class="banner-title">
                     <a href="about"><?= $produits[0]->nom_art?></a>
                   </h3>
-                  <p class="banner-text"><?=strTextLent($produits[0]->courte_description,256)?>
+                  <p class="banner-text"><?=strTextLent($produits[0]->courte_description,180)?>
                   </p>
-                  <a href="about" class="banner-link">
+                  <a href="product-details/<?= $produits[0]->mat_article?>" class="banner-link">
                     Voir plus
                     <img src="assets/img/icons/arrow-icon-1-1.png" alt="arrow icon ">
                   </a>
@@ -688,7 +688,7 @@
               </div>
             </div>
             <div class="banner-img">
-              <img src="<?=$image_produit.$produits[0]->lien_img_vedette?>" alt="banner-img">
+              <img src="<?=$image_produit.$produits[0]->lien_img_vedette?>" style="border-radius:15px;" alt="banner-img">
             </div>
           </div>
         </div>
@@ -700,8 +700,8 @@
                   <h3 class="banner-title">
                     <a href="about"><?= $produits[1]->nom_art?></a>
                   </h3>
-                  <p class="banner-text"><?=strTextLent($produits[0]->courte_description,256)?></p>
-                  <a href="about" class="banner-link">
+                  <p class="banner-text"><?=strTextLent($produits[1]->courte_description,180)?></p>
+                  <a href="product-details/<?= $produits[1]->mat_article?>" class="banner-link">
                     Voir plus
                     <img src="assets/img/icons/arrow-icon-1-1.png" alt="arrow icon ">
                   </a>
@@ -709,7 +709,7 @@
               </div>
             </div>
             <div class="banner-img">
-              <img src="assets/img/banner/banner-1-2.png" alt="banner-img">
+            <img src="<?=$image_produit.$produits[1]->lien_img_vedette?>" style="border-radius:15px;" alt="banner-img">
             </div>
           </div>
         </div>
@@ -806,19 +806,18 @@
             <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
               <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
-            <span class="testi-author">Par<a href="#">Thomas Willimes</a></span>
+            <span class="testi-author">Par <a href="#">Tchoffo julio</a></span>
             <h3 class="testi-title">La meilleure protéine que j'ai jamais eu</h3>
             <div class="testi-content">
               <div class="testi-image">
-                <img class="img1" src="assets/img/testimonials/testi-1-1.png" alt="testimonials">
+                <img class="img1" src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="testimonials">
                 <i class="testi-icon">
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
               <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
-                J'ai cherché sur de nombreux sites et j'étais absolument
-                époustouflé par les critiques de l’huile Cannaray.
-                Les informations et la gamme de produits de haute qualité
+                J'ai cherché sur de nombreux sites,
+                les informations et la gamme de produits de haute qualité
                 les produits étaient incroyables.
               </p>
             </div>
@@ -829,20 +828,18 @@
             <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
               <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
-            <span class="testi-author">Par<a href="#">Thomas Willimes</a></span>
-            <h3 class="testi-title">L’huile de CBD la plus savoureuse de tous les temps</h3>
+            <span class="testi-author">Par <a href="#">Tchakountio Abdel</a></span>
+            <h3 class="testi-title">L’huile de CBD vraiment savoureuse</h3>
             <div class="testi-content">
               <div class="testi-image">
-                <img class="img1" src="assets/img/testimonials/testi-1-2.png" alt="testimonials">
+                <img class="img1" src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="testimonials">
                 <i class="testi-icon">
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
-                J'ai cherché sur de nombreux sites et j'étais absolument
-                époustouflé par les critiques de l’huile Cannaray.
-                Les informations et la gamme de produits de haute qualité
-                les produits étaient incroyables.
+              <p class="testi-text"> Après avoir exploré de nombreux sites, j'ai été totalement impressionné
+                 par les avis sur l'huile Cannaray. Tous ce que j'ai recu comme Conseils sur le produit 
+                 étaient superbes.
               </p>
             </div>
           </div>
@@ -852,20 +849,17 @@
             <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
               <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
-            <span class="testi-author">Par<a href="#">Thomas Willimes</a></span>
+            <span class="testi-author">Par<a href="#">Tchapda leaticia</a></span>
             <h3 class="testi-title">La meilleure protéine que j'ai jamais eu</h3>
             <div class="testi-content">
               <div class="testi-image">
-                <img class="img1" src="assets/img/testimonials/testi-1-3.png" alt="testimonials">
+                <img class="img1" src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="testimonials">
                 <i class="testi-icon">
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
-                J'ai cherché sur de nombreux sites et j'étais absolument
-                époustouflé par les critiques de l’huile Cannaray.
-                Les informations et la gamme de produits de haute qualité
-                les produits étaient incroyables.
+              <p class="testi-text">J'utilise de l'huile de CBD depuis trois ans.
+                 Après avoir exploré de nombreux sites, j'ai été vraiment impressionné par les avis sur l'huile Cannaray.
               </p>
             </div>
           </div>
@@ -889,25 +883,33 @@
         </div>
       </div>
       <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
+        <?php foreach($article as $key=>$val) :
+          if($key<3){
+          ?>
         <div class="col-lg-4">
           <div class="vs-blog blog-style1">
-            <div class="blog-img">
-              <img src="assets/img/blog/blog-1-1.jpg" alt="Blog Image" class="img w-100">
+            <div class="blog-img" style="hight:300px width:300px;">
+             <img src="<?=$url_image.$val->photo?>" alt="Blog Image" class="img w-100">  
             </div>
-            <span class="blog-date">24 <span>Fev, 2022</span></span>
+            <?php $date=explode("-",$val->date);?>
+            <span class="blog-date"><?=$date[2]?> <span><?=$date[1]?>, <?=$date[0]?></span></span>
             <div class="blog-content">
               <div class="blog-meta">
-                <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
+                <a href="blog" tabindex="0">Publié <span>Par <?= $val->user_admin?></span></a>
                 <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
               </div>
               <h3 class="blog-title h5">
                 <a href="blog-details" tabindex="0"> 
-                Options pour une éducation au cannabis dans tous les pays
+                <?=$val->titre?>
                 </a>
               </h3>
             </div>
           </div>
         </div>
+        <?php } else{
+          break;
+        } endforeach?>
+        <?php /*
         <div class="col-lg-4">
           <div class="vs-blog blog-style1">
             <div class="blog-img">
@@ -946,6 +948,7 @@
             </div>
           </div>
         </div>
+        */ ?>
       </div>
       <div class="row justify-content-center">
         <div class="col-auto">
