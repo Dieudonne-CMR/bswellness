@@ -69,7 +69,7 @@
   <div class="vs-menu-wrapper">
     <div class="vs-menu-area text-center">
       <div class="mobile-logo">
-        <a href="home"><img src="assets/img/logo-white2.png" alt="Carmax" class="logo"></a>
+        <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Carmax" class="logo"></a>
         <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
       </div>
       <div class="vs-mobile-menu">
@@ -150,7 +150,7 @@
           <div class="col-lg-auto flex-grow-1 d-none d-lg-block">
             <p class="header-text">
               <i><img src="assets/img/icons/free-delivery.png" alt=""></i>
-              Livraison gratuite le lendemain lorsque vous <span>dépenser plus de 40 <?=$device3[0]->code_iso_devise?></span>
+              Livraison gratuite le lendemain lorsque vous <span>dépenser plus de 10000 <?=$device3[0]->code_iso_devise?></span>
             </p>
           </div>
           <div class="col-lg-auto">
