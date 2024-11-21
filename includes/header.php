@@ -8,6 +8,7 @@
       <span class="loader"></span>
     </div>
   </div> */ ?>
+  <?php $device2=info_boutique(); ?>
   <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
   <!--==============================
     Popup Search Box
@@ -33,19 +34,19 @@
               <a href="products-grid.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="products-grid.html"><img src="assets/img/products/p-rc-1-1.jpg" alt="Cart Image" />
               </a>
               <span class="quantity">
-								1 × <span class="amount"><span>$</span>100.00</span>
+								1 × <span class="amount">100.00<span><?=$device2[0]->code_iso_devise?></span></span>
               </span>
-            </li>
+            </li> 
             <li class="mini_cart_item">
               <a href="products-grid.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="products-grid.html"><img src="assets/img/products/p-rc-1-2.jpg" alt="Cart Image" />
               </a>
               <span class="quantity">
-								1 × <span class="amount"><span>$</span>10.00</span>
+								1 × <span class="amount">10.00<span><?=$device2[0]->code_iso_devise?></span></span>
               </span>
             </li>
           </ul>
           <div class="total">
-            <strong>Subtotal:</strong> <span class="amount"><span>$</span>110.00</span>
+            <strong>Subtotal:</strong> <span class="amount">110.00<span><?=$device2[0]->code_iso_devise?></span></span>
           </div>
           <div class="buttons d-flex">
             <a href="cart.html" class="vs-btn style2">Voir le panier</a>
@@ -149,7 +150,7 @@
           <div class="col-lg-auto flex-grow-1 d-none d-lg-block">
             <p class="header-text">
               <i><img src="assets/img/icons/free-delivery.png" alt=""></i>
-              Livraison gratuite le lendemain lorsque vous <span>dépenser plus de $40</span>
+              Livraison gratuite le lendemain lorsque vous <span>dépenser plus de 40 <?=$device2[0]->code_iso_devise?></span>
             </p>
           </div>
           <div class="col-lg-auto">
