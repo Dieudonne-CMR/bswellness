@@ -201,7 +201,7 @@
               <h3 class="product-title"><a href="product-details/<?=$detail_pro[$i]->mat_article?>"><?=$detail_pro[$i]->nom_art?></a></h3>
               <?php $detail_pro[$i]->courte_description= strTextLent($detail_pro[$i]->courte_description,80) ?>
               <span class="product-cate"><?=$detail_pro[$i]->courte_description?></span>
-              <span class="product-price"><?=$detail_pro[$i]->prix_reel?></span>
+              <span class="product-price"><?=$detail_pro[$i]->prix_reel."".$devise2[0]->code_iso_devise?></span>
               <div class="product-actions">
                 <a href="cart.html" class="vs-btn">Ajouter au panier</a>
                 <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
