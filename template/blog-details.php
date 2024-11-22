@@ -5,6 +5,7 @@
 <!-- Mirrored from html.vecurosoft.com/cannabo/demo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Nov 2024 09:54:06 GMT -->
 <head>
   <meta charset="utf-8">
+  <base href="../">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Home 1 </title>
   <meta name="author" content="vecuro">
@@ -65,32 +66,32 @@
   <!--==============================
 	Preloader
 	==============================-->
-  <div class="preloader">
+  <?php /* <div class="preloader">
     <button class="vs-btn preloaderCls">Cancel Preloader </button>
     <div class="preloader-inner">
       <img src="assets/img/logo.png" alt="logo">
       <span class="loader"></span>
     </div>
   </div>
-  <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+  <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a> */ ?>
   <!--==============================
     Popup Search Box
   ============================== -->
-  <div class="popup-search-box d-none d-lg-block  ">
+   <?php /* <div class="popup-search-box d-none d-lg-block  ">
     <button class="searchClose"><i class="fal fa-times"></i></button>
     <form action="#">
       <input type="text" class="border-theme" placeholder="What are you looking for">
       <button type="submit"><i class="fal fa-search"></i></button>
     </form>
-  </div>
+  </div> */ ?>
   <!--==============================
     Cart Side bar
   ============================== -->
-  <div class="sideCart-wrapper offcanvas-wrapper">
+  <?php /* <div class="sideCart-wrapper offcanvas-wrapper">
     <div class="sidemenu-content">
       <button class="closeButton border-theme bg-theme-hover sideMenuCls"><i class="far fa-times"></i></button>
       <div class="widget widget_shopping_cart">
-        <h3 class="widget_title">Shopping cart</h3>
+        <h3 class="widget_title">Panier</h3>
         <div class="widget_shopping_cart_content">
           <ul class="cart_list">
             <li class="mini_cart_item">
@@ -125,22 +126,22 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> */ ?>
   <!--==============================
 		Mobile Menu
 	============================== -->
-  <div class="vs-menu-wrapper">
+   <?php /*  <div class="vs-menu-wrapper">
     <div class="vs-menu-area text-center">
       <div class="mobile-logo">
-        <a href="index.html"><img src="assets/img/logo-white2.png" alt="Carmax" class="logo"></a>
+        <a href="home"><img src="assets/img/logo-white2.png" alt="Carmax" class="logo"></a>
         <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
       </div>
       <div class="vs-mobile-menu">
         <ul>
           <li class="menu-item-has-children">
-            <a href="index.html">Home</a>
+            <a href="home">Home</a>
             <ul class="sub-menu">
-              <li><a href="index.html">Home 1</a></li>
+              <li><a href="home">Home 1</a></li>
               <li><a href="index-2.html">Home 2</a></li>
               <li><a href="index-3.html">Home 3</a></li>
             </ul>
@@ -169,7 +170,7 @@
           <li class="menu-item-has-children">
             <a href="#none">Pages</a>
             <ul class="sub-menu">
-              <li><a href="index.html">Home 1</a></li>
+              <li><a href="home">Home 1</a></li>
               <li><a href="index-2.html">Home 2</a></li>
               <li><a href="index-3.html">Home 3</a></li>
               <li><a href="about.html">About</a></li>
@@ -178,7 +179,7 @@
               <li><a href="services.html">Services</a></li>
               <li><a href="pricing-plan.html">Pricing Plan</a></li>
               <li><a href="faq.html">Faq's</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href=" blog-details/<?=$detai_post->matricule?>">Blog</a></li>
               <li><a href="blog-details.html">Blog Details</a></li>
               <li><a href="products-grid.html">Product Grid</a></li>
               <li><a href="products-grid-sidebar.html">Product Sidebar</a></li>
@@ -199,17 +200,17 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> */ ?>
   <!--==============================
 	Offcanvas
-	============================== -->
-  <div class="sidemenu-wrapper d-none d-lg-block">
+	================================== -->
+  <?php /*<div class="sidemenu-wrapper d-none d-lg-block">
     <div class="sidemenu-content">
       <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
       <div class="widget  ">
         <div class="vs-widget-about">
           <div class="footer-logo">
-            <a href="index.html"><img src="assets/img/logo.png" alt="Consik" class="logo"></a>
+            <a href="home"><img src="assets/img/logo.png" alt="Consik" class="logo"></a>
           </div>
           <p>Intrinsicly evisculate emerging cutting edge scenarios redefine future-proof
             e-markets
@@ -247,11 +248,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> */ ?>
   <!--==============================
         Header Area
     ==============================-->
-  <header class="vs-header header-layout1">
+  <?php /*  <header class="vs-header header-layout1">
     <!-- Header Top -->
     <div class="header-top">
       <div class="container">
@@ -285,16 +286,16 @@
           <div class="row justify-content-between align-items-center gx-sm-0">
             <div class="col-auto">
               <div class="header-logo">
-                <a href="index.html"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
+                <a href="home"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
               </div>
             </div>
             <div class="col-auto flex-grow-1">
               <nav class="main-menu d-none d-lg-block">
                 <ul>
                   <li class="menu-item-has-children">
-                    <a href="index.html">Home</a>
+                    <a href="home">Home</a>
                     <ul class="sub-menu">
-                      <li><a href="index.html">Home 1</a></li>
+                      <li><a href="home">Home 1</a></li>
                       <li><a href="index-2.html">Home 2</a></li>
                       <li><a href="index-3.html">Home 3</a></li>
                     </ul>
@@ -320,7 +321,7 @@
                     <ul class="mega-menu">
                       <li><a href="products-grid.html">Page List 1</a>
                         <ul>
-                          <li><a href="index.html">Home 1</a></li>
+                          <li><a href="home">Home 1</a></li>
                           <li><a href="index-2.html">Home 2</a></li>
                           <li><a href="index-3.html">Home 3</a></li>
                           <li><a href="about.html">About</a></li>
@@ -334,7 +335,7 @@
                           <li><a href="service-details.html">Service Details</a></li>
                           <li><a href="pricing-plan.html">Pricing Plan</a></li>
                           <li><a href="faq.html">Faq's</a></li>
-                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href=" blog-details/<?=$detai_post->matricule?>">Blog</a></li>
                           <li><a href="blog-details.html">Blog Details</a></li>
                         </ul>
                       </li>
@@ -403,18 +404,19 @@
       </div>
     </div>
     <!-- Main Menu Area -->
-  </header>
+  </header> */ ?>
+  <?php include "includes/header.php" ?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="assets/img/bg/b-1-3.png">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$url_image.$detai_post->photo?>">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
           <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Our Blog</h1>
+            <h1 class="breadcumb-title"><?=$detai_post->titre?></h1>
             <div class="breadcumb-menu-wrap">
               <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>Our Blog</li>
+                <li><a href="home">Acceuil</a></li>
+                <li>NOS ARTICLES</li> 
               </ul>
             </div>
           </div>
@@ -430,29 +432,20 @@
           <div class="vs-blog blog-single">
             <div class="blog-body">
               <div class="blog-img main-img">
-                <img src="assets/img/blog/blog-b-1-1.jpg" alt="Blog Image" class="img w-100">
+                <img src="<?=$url_image.$detai_post->photo?>" alt="Blog Image" class="img w-100">
               </div>
-              <span class="blog-date">24 <span>Feb, 2022</span></span>
+              <?php $date=explode("-",$detai_post->date);?>
+              <span class="blog-date"><?=$date[2]?> <span><?=$date[1]?>, <?=$date[0]?></span></span>
               <div class="blog-content">
                 <div class="blog-meta">
-                  <a href="blog.html" tabindex="0">Posted <span>By Jhon Smith</span></a>
-                  <a class="blog-meta-icon" href="blog.html" tabindex="0"><i class="fas fa-comments"></i> 14 Comments</a>
+                  <a href=" blog-details/<?=$detai_post->matricule?>" tabindex="0">Posted <span>Par <?=info_admin($detai_post->matricule_admin)->nom?></span></a>
+                  <a class="blog-meta-icon" href=" blog-details/<?=$detai_post->matricule?>" tabindex="0"><i class="fas fa-comments"></i> 14 Comments</a>
                 </div>
                 <h3 class="blog-title">
-                  Options For a Cannabis Education <br>
-                in All Countries
+                  <?=$detai_post->titre?>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adiiscing elit, sed do eiusmod tempor incidunt labrator magna
-                  aliqua. Ut enim ad minim veniam, quisris nisi ut aliquip ex ea comdo consuat. Duis dolor in repreeuin in
-                  vol tate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur with sin idatat no roident, sunt
-                  in
-                  culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="mb-30">Dorem ipsum dolor sit amet, consectetur adiiscing elit, sed do eismod tempor incidunt
-                  hemp
-                  cre magnia
-                  aliqua. Ut enim ad minim veniam, quisris nisi ut aliquip ex eyiun in vol tate velit esse cillum dolore
-                  eu
-                  fugiat nulla pariatur. Excepteur sin idatat no roident</p>
+                <p><?=$detai_post->sous_titre?></p>
+                <p class="mb-30"><?=$detai_post->content?></p>
                 <div class="row gx-20">
                   <div class="col-lg-6 mb-30">
                     <div class="blog-img">
@@ -496,9 +489,9 @@
                   </div>
                   <div class="blog-social">
                     <span class="title">Post Share:</span>
-                    <a href="index.html"><i class="fab fa-facebook-f"></i></a>
-                    <a href="index.html"><i class="fab fa-twitter"></i></a>
-                    <a href="index.html"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="home"><i class="fab fa-facebook-f"></i></a>
+                    <a href="home"><i class="fab fa-twitter"></i></a>
+                    <a href="home"><i class="fab fa-linkedin-in"></i></a>
                   </div>
                 </div>
               </div>
@@ -645,7 +638,7 @@
                       </a>
                     </h4>
                     <div class="recent-post-meta">
-                      <a href="blog.html"><i class="fas fa-calendar-alt"></i>March 25, 2024</a>
+                      <a href=" blog-details/<?=$detai_post->matricule?>"><i class="fas fa-calendar-alt"></i>March 25, 2024</a>
                     </div>
                   </div>
                 </div>
@@ -660,7 +653,7 @@
                       </a>
                     </h4>
                     <div class="recent-post-meta">
-                      <a href="blog.html"><i class="fas fa-calendar-alt"></i>March 25, 2024</a>
+                      <a href=" blog-details/<?=$detai_post->matricule?>"><i class="fas fa-calendar-alt"></i>March 25, 2024</a>
                     </div>
                   </div>
                 </div>
@@ -675,7 +668,7 @@
                       </a>
                     </h4>
                     <div class="recent-post-meta">
-                      <a href="blog.html"><i class="fas fa-calendar-alt"></i>25 Jan, 2024</a>
+                      <a href=" blog-details/<?=$detai_post->matricule?>"><i class="fas fa-calendar-alt"></i>25 Jan, 2024</a>
                     </div>
                   </div>
                 </div>
@@ -726,43 +719,43 @@
             </div>
             <div class="widget">
               <h3 class="widget_title">
-                Quick Links
+              Liens rapides
               </h3>
               <ul class="widget_links">
                 <li>
                   <a href="blog-details.html">
-                    Website Services
+                  Services du site Web
                   </a>
                 </li>
                 <li>
                   <a href="blog-details.html">
-                    Revamp Services
+                  Services de refonte
                   </a>
                 </li>
                 <li>
                   <a href="blog-details.html">
-                    Social Management
+                  Gestion sociale
                   </a>
                 </li>
                 <li>
                   <a href="blog-details.html">
-                    Domain & Website
+                  Domaine et site Web
                   </a>
                 </li>
                 <li>
                   <a href="blog-details.html">
-                    Branding & Logo
+                  Image de marque & logo
                   </a>
                 </li>
               </ul>
             </div>
             <div class="widget form" data-bg-src="assets/img/pattern/newsletter-form-pattern-bg.png">
               <h3 class="widget_title text-white">
-                Newsletter
+              Bulletin
               </h3>
               <form class="newsletter-form">
-                <p class="newsletter-text">Enter your email and get recent news &
-                  recent offers update.</p>
+                <p class="newsletter-text">Entrez votre e-mail et recevez les dernières nouvelles et 
+                  les dernières offres mises à jour.</p>
                 <input class="form-control" type="email" placeholder="Enter your email....">
                 <button type="submit" class="vs-btn style2">Subscribe</button>
               </form>
@@ -772,8 +765,10 @@
       </div>
     </div>
   </section>
+  <?php include "includes/footer.php" ?>
   <!-- Blog Area End -->
   <!-- Footer Area Start -->
+   <?php /*
   <section class="footer-layout3">
     <div class="widget-area style3" data-bg-src="assets/img/bg/footer-bg-3-1.png">
       <img src="assets/img/leafs/footer-3-1.png" alt="footer leafs" class="footer-overlay">
@@ -783,7 +778,7 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="assets/img/logo-white.png" alt="Cannabo" class="logo"></a>
+                  <a href="home"><img src="assets/img/logo-white.png" alt="Cannabo" class="logo"></a>
                 </div>
                 <p class="footer-text style3">Aliquet eget sit amet tellus cras adipiscing
                   enim eu turpis. Hac habitasse platea dictu
@@ -845,10 +840,10 @@
               <div class="footer-menu--style style3">
                 <ul>
                   <li><a href="about.html">Our Process</a></li>
-                  <li><a href="index.html">Payments</a></li>
+                  <li><a href="home">Payments</a></li>
                   <li><a href="contact.html">Special Offers</a></li>
                   <li><a href="faq.html">Shipping</a></li>
-                  <li><a href="blog.html">Regulations</a></li>
+                  <li><a href=" blog-details/<?=$detai_post->matricule?>">Regulations</a></li>
                   <li><a href="index-2.html">Product Returns</a></li>
                   <li><a href="contact.html">About Us</a></li>
                   <li><a href="project.html">FAQ</a></li>
@@ -896,7 +891,7 @@
       <div class="container">
         <div class="row g-3 justify-content-center justify-content-xxl-between align-items-center">
           <div class="col-lg-auto">
-            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index.html">Cannabo
+            <p class="copyright-text text-center text-lg-start">Copyright © <a href="home">Cannabo
                 2024</a> . All
               rights reserved. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
           </div>
@@ -919,6 +914,7 @@
       </div>
     </div>
   </section>
+  */?>
   <!-- Footer Area End -->
   <!--********************************
 			Code End  Here 

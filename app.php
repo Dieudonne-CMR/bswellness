@@ -84,7 +84,7 @@ if(@$url[0]=='contact'):
 endif;
 
 //------- Route page blog-details\
-/*
+
 if(@$url[0]=='blog-details'):
     $service1 = recup_services();
     $article2 = recup_article();
@@ -93,12 +93,12 @@ if(@$url[0]=='blog-details'):
     $detai_post=recup_detail_post($mat_article) ;  
     // var_dump($detai_post);
     if(empty($detai_post)){
-        header("location:../blog");
+        header("location:../home");
     }else{
         include_once("template/$url[0].php");
     }
 endif;
-*/
+
 
 //------- Route page service
 //je viens

@@ -894,11 +894,11 @@
             <span class="blog-date"><?=$date[2]?> <span><?=$date[1]?>, <?=$date[0]?></span></span>
             <div class="blog-content">
               <div class="blog-meta">
-                <a href="blog" tabindex="0">Publié <span>Par <?= $val->user_admin?></span></a>
+                <a href="blog-details/<?=$val->matricule?>" tabindex="0">Publié <span>Par <?= $val->user_admin?></span></a>
                 <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
               </div>
               <h3 class="blog-title h5">
-                <a href="blog-details" tabindex="0"> 
+                <a href="blog-details/<?=$val->matricule?>" tabindex="0"> 
                 <?=$val->titre?>
                 </a>
               </h3>
