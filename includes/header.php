@@ -8,9 +8,10 @@
       <span class="loader"></span>
     </div>
   </div> */ ?>
+  <?php $device3=info_boutique(); ?>
   <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
   <!--==============================
-    Popup Search Box
+    Popup Search Box 
   ============================== -->
   <div class="popup-search-box d-none d-lg-block  ">
     <button class="searchClose"><i class="fal fa-times"></i></button>
@@ -33,19 +34,19 @@
               <a href="products-grid.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="products-grid.html"><img src="assets/img/products/p-rc-1-1.jpg" alt="Cart Image" />
               </a>
               <span class="quantity">
-								1 × <span class="amount"><span>$</span>100.00</span>
+								1 × <span class="amount">100.00<span><?=$device3[0]->code_iso_devise?></span></span>
               </span>
-            </li>
+            </li> 
             <li class="mini_cart_item">
               <a href="products-grid.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="products-grid.html"><img src="assets/img/products/p-rc-1-2.jpg" alt="Cart Image" />
               </a>
               <span class="quantity">
-								1 × <span class="amount"><span>$</span>10.00</span>
+								1 × <span class="amount">10.00<span><?=$device3[0]->code_iso_devise?></span></span>
               </span>
             </li>
           </ul>
           <div class="total">
-            <strong>Subtotal:</strong> <span class="amount"><span>$</span>110.00</span>
+            <strong>Subtotal:</strong> <span class="amount">110.00<span><?=$device3[0]->code_iso_devise?></span></span>
           </div>
           <div class="buttons d-flex">
             <a href="cart.html" class="vs-btn style2">Voir le panier</a>
@@ -68,7 +69,7 @@
   <div class="vs-menu-wrapper">
     <div class="vs-menu-area text-center">
       <div class="mobile-logo">
-        <a href="home"><img src="assets/img/logo-white2.png" alt="Carmax" class="logo"></a>
+        <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Carmax" class="logo"></a>
         <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
       </div>
       <div class="vs-mobile-menu">
@@ -149,7 +150,7 @@
           <div class="col-lg-auto flex-grow-1 d-none d-lg-block">
             <p class="header-text">
               <i><img src="assets/img/icons/free-delivery.png" alt=""></i>
-              Livraison gratuite le lendemain lorsque vous <span>dépenser plus de $40</span>
+              Livraison gratuite le lendemain lorsque vous <span>dépenser plus de 10000 <?=$device3[0]->code_iso_devise?></span>
             </p>
           </div>
           <div class="col-lg-auto">
@@ -175,7 +176,7 @@
           <div class="row justify-content-between align-items-center gx-sm-0">
             <div class="col-auto">
               <div class="header-logo">
-                <a href="home"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
+                <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Cannabo" class="logo"></a>
               </div>
             </div>
             <div class="col-auto flex-grow-1">
