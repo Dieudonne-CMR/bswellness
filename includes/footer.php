@@ -1,4 +1,4 @@
-<?php /*<section class="footer-layout1 mt-4 z-index-common" data-bg-src="assets/img/bg/footer-bg-1-1.png">
+<?php /*<section class="footer-layout1 mt-4 z-home-common" data-bg-src="assets/img/bg/footer-bg-1-1.png">
     <img class="footer-ele1" src="assets/img/footer/falling-leaves.png" alt="">
     <div class="widget-area">
       <div class="container">
@@ -7,7 +7,7 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
+                  <a href="home"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
                 </div>
                 <p class="footer-text">Aliquet eget sit amet tellus cras adipiscing
                   enim eu turpis. Hac habitasse platea dictu
@@ -69,11 +69,11 @@
               <div class="footer-menu--style">
                 <ul>
                   <li><a href="about">Our Process</a></li>
-                  <li><a href="index">Payments</a></li>
+                  <li><a href="home">Payments</a></li>
                   <li><a href="contact">Special Offers</a></li>
                   <li><a href="faq">Shipping</a></li>
                   <li><a href="blog">Regulations</a></li>
-                  <li><a href="index-2">Product Returns</a></li>
+                  <li><a href="home-2">Product Returns</a></li>
                   <li><a href="contact">About Us</a></li>
                   <li><a href="project">FAQ</a></li>
                   <li><a href="services">Our Team</a></li>
@@ -89,7 +89,7 @@
       <div class="container">
         <div class="row g-3 justify-content-center justify-content-xxl-between align-items-center">
           <div class="col-lg-auto">
-            <p class="copyright-text text-center text-lg-start">Copyright © <a href="index">Cannabo 2024</a> . All
+            <p class="copyright-text text-center text-lg-start">Copyright © <a href="home">Cannabo 2024</a> . All
               rights reserved. <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
           </div>
           <div class="col-lg-auto">
@@ -120,7 +120,7 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="index"><img src="assets/img/logo-white.png" alt="Cannabo" class="logo"></a>
+                  <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Cannabo" class="logo"></a>
                 </div>
                 <p class="footer-text style3"><?=$decription_entreprise?>
                  </p>
@@ -186,7 +186,7 @@
                   <li><a href="contact">Contact</a></li>
                   <!--
                   <li><a href="blog">Regulations</a></li>
-                  <li><a href="index-2">Product Returns</a></li>
+                  <li><a href="home-2">Product Returns</a></li>
                   <li><a href="contact">About Us</a></li>
                   <li><a href="project">FAQ</a></li>
                   <li><a href="services">Our Team</a></li> -->
