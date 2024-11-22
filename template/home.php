@@ -887,7 +887,7 @@
           ?>
         <div class="col-lg-4">
           <div class="vs-blog blog-style1">
-            <div class="blog-img" style="hight:300px width:300px;">
+            <div class="blog-img" style="hight:300px; width:300px;">
              <img src="<?=$url_image.$val->photo?>" alt="Blog Image" class="img w-100">  
             </div>
             <?php $date=explode("-",$val->date);?>
