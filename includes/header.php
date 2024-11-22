@@ -176,7 +176,7 @@
           <div class="row justify-content-between align-items-center gx-sm-0">
             <div class="col-auto">
               <div class="header-logo">
-                <a href="home"><img src="assets/img/logo.png" alt="Cannabo" class="logo"></a>
+                <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Cannabo" class="logo"></a>
               </div>
             </div>
             <div class="col-auto flex-grow-1">
