@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <base href="../">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Our Products 1 </title>
-  <meta name="author" content="vecuro">
-  <meta name="description" content="Cannabo - Marijuana and CBD Oil HTML5 Template">
-  <meta name="keywords" content="Cannabo - Marijuana and CBD Oil HTML5 Template" />
+  <title><?= $nom_entreprise ?> | <?= $nom_produit ?> </title>
+  <meta name="author" content="<?= $nom_entreprise ?>">
+  <meta name="description" content="<?=$decription_entreprise?>">
+  <meta name="keywords" content="<?=$decription_entreprise?>" />
   <meta name="robots" content="INDEX,FOLLOW">
   <!-- Mobile Specific Metas -->
+
+  <?php include "includes/style.php" ?>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
@@ -53,7 +56,19 @@
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head> 
+<meta property="og:url" content=" " />
 
+<?php $meer = strip_tags($courte_description) ?>
+<meta property="og:type" content="website" />
+<meta property="og:title" content=" <?= $nom_produit ?>" />
+<meta property="og:description"
+    content=" <?= strip_tags($courte_description) ?>" />
+<meta property="og:image"
+    content="<?= $image_produit . $lien_img_vedette  ?>" />
+
+<?php 
+        $lien_watSapp = "https://api.whatsapp.com/send?phone=$mumero&text= Bonjour j'ai besoin de ce produit: ".url();
+ ?>
 <body>
   <!--[if lte IE 9]>
     	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -66,7 +81,7 @@
 	============================== -->
   <?php include "includes/header.php" ?>
   <!-- breadcumb -->
-  <section class="z-index-common breadcumb-wrapper" data-bg-src="<?=$image_produit.$lien_img_vedette?>">
+  <section class="z-index-common breadcumb-wrapper" data-bg-src="assets/img/bg/b-1-3.png">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
@@ -115,21 +130,21 @@
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
               </div>
-              <span class="product-rating__total">(1 Revoir )</span>
+              <!-- <span class="product-rating__total">(1 Revoir )</span> -->
             </div>
             <h2 class="product-title"><?=$nom_produit?></h2>
-            <span class="product-ml">Fort / 4% / 30ml</span>
+            <span class="product-ml"><p><?=$courte_description?></p></span>
             <p class="product-price"><?=$prix_reel."".$devise2[0]->code_iso_devise?> <del><?=$prix_fictif."".$devise2[0]->code_iso_devise?></del></p>
             <div class="actions">
               <div class="quantity">
-                <label for="quantity" class="screen-reader-text">Quantité:</label>
+                <?php /*<label for="quantity" class="screen-reader-text">Quantité:</label>
                 <div class="quantity__field quantity-container">
                   <input type="number" id="quantity" class="qty-input" step="1" min="1" max="100" name="quantity" value="01" title="Qty">
                   <div class="quantity__buttons">
                     <button class="quantity-plus qty-btn"><i class="fas fa-caret-up"></i></button>
                     <button class="quantity-minus qty-btn"><i class="fas fa-caret-down"></i></button>
                   </div>
-                </div>
+                </div> */?>
               </div>
             </div>
             <span class="counter-title">Offre à durée limitée:</span>
@@ -150,15 +165,15 @@
               </ul>
             </div>
             <div class="pro-btns">
-              <a href="cart.html" class="vs-btn">Ajouter au panier</a>
+              <a href="<?= $lien_watSapp ?>" class="vs-btn">Ajouter au panier</a>
               <a href="#" class="icon-btn"><i class="far fa-heart"></i></a>
             </div>
             <div class="product_meta">
               <span class="sku_wrapper">
-              <p>SKU:</p> <span class="sku">Produit-1-1</span>
+              <p>SKU:</p> <span class="sku"><?= recup_detail_cat($mat_categorie_art)[0]-> libelle ?></span>
               </span>
               <span>
-              <p>Tags:</p> <a href="#" rel="tag">En vedette</a><a href="#" rel="tag">Produits</a><a href="#"
+              <p>Tags:</p> <a href="javascript:void(0)" rel="tag">En vedette</a><a href="avascript:void(0)" rel="tag">Produits</a><a href="avascript:void(0)"
                 rel="tag">Memp</a>
             </span>
             </div>
@@ -172,7 +187,7 @@
     <div class="container">
       <div class="product-description mb-50">
         <h3 class="blog-inner-title">Description</h3>
-        <p><?=$courte_description?></p>
+        
         <p><?=$description?></p>
       </div>
 
@@ -184,38 +199,32 @@
     <div class="container">
       <h3 class="blog-inner-title">Produits des mêmes catégories</h3>
       <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
-        <?php $i=0; $k=count($detail_pro); $j=0;
-        while(($i<4) && ($j<$k)){
-          if($detail_pro[0]->mat_categorie_art === $detail_pro[$i]->mat_categorie_art){
-        ?>
+        <?php foreach( $produits as $key=> $value):
+          if($key < 6):
+          ?>
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="vs-product product-style6">
             <div class="product-img">
-              <a href="product-details/<?=$detail_pro[$i]->mat_article?>"><img src="<?=$image_produit.$detail_pro[$i]->lien_img_vedette?>" alt="Image" class="img w-100"></a>
+              <a href="product-details/<?=$value->mat_article?>"><img src="<?=$image_produit.$value->lien_img_vedette?>" alt="Image" class="img w-100"></a>
               
             </div>
             <div class="product-content">
               <div class="star-rating" role="img" aria-label="Rated 5 out of 5">
                 <span style="width:100%">Noté <strong class="rating">5</strong> Sur 5</span>
               </div>
-              <h3 class="product-title"><a href="product-details/<?=$detail_pro[$i]->mat_article?>"><?=$detail_pro[$i]->nom_art?></a></h3>
-              <?php $detail_pro[$i]->courte_description= strTextLent($detail_pro[$i]->courte_description,80) ?>
-              <span class="product-cate"><?=$detail_pro[$i]->courte_description?></span>
-              <span class="product-price"><?=$detail_pro[$i]->prix_reel."".$devise2[0]->code_iso_devise?></span>
+              <h3 class="product-title"><a href="product-details/<?=$value->mat_article?>"><?=$value->nom_art?></a></h3>
+              <?php $value->courte_description= strTextLent($value->courte_description,80) ?>
+              <span class="product-cate"><?=$value->courte_description?></span>
+              <span class="product-price"><?=$value->prix_reel."".$devise2[0]->code_iso_devise?></span>
               <div class="product-actions">
-                <a href="cart.html" class="vs-btn">Ajouter au panier</a>
-                <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="product-details/<?=$value->mat_article?>" class="vs-btn">Ajouter au panier</a>
+                <a href="product-details/<?=$value->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <?php
-       $i++; 
-       $j++;
-       }else{
-        $j++;
-        }        
-         }?>
+        <?php else: break; endif; endforeach;
+       ?>
         <?php /*
         <div class="col-xl-3 col-lg-4 col-md-6">
           <div class="vs-product product-style6">

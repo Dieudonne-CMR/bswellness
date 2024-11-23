@@ -6,12 +6,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Home 1 </title>
-  <meta name="author" content="vecuro">
-  <meta name="description" content="Cannabo - Marijuana and CBD Oil HTML5 Template">
-  <meta name="keywords" content="Cannabo - Marijuana and CBD Oil HTML5 Template" />
+  <title><?= $nom_entreprise ?> | Contact</title>
+  <meta name="author" content="<?= $nom_entreprise ?>">
+  <meta name="description" content="<?=$decription_entreprise?>">
+  <meta name="keywords" content="<?=$decription_entreprise?>" />
   <meta name="robots" content="INDEX,FOLLOW">
   <!-- Mobile Specific Metas -->
+   
+  <?php include "includes/style.php" ?>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">

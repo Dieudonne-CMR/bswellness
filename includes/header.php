@@ -1,29 +1,29 @@
   <!--==============================
 	Preloader
 	==============================-->
-  <?php /* <div class="preloader">
+  <div class="preloader">
     <button class="vs-btn preloaderCls">Annuler le préchargement</button>
     <div class="preloader-inner">
-      <img src="assets/img/logo.png" alt="logo">
+      <img src="<?=$lien_logo.$logo?>" style="max-width: 30%; border-radius: 12%;" alt="logo">
       <span class="loader"></span>
     </div>
-  </div> */ ?>
+  </div> 
   <?php $device3=info_boutique(); ?>
   <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
   <!--==============================
     Popup Search Box 
   ============================== -->
-  <div class="popup-search-box d-none d-lg-block  ">
+  <?php /*<div class="popup-search-box d-none d-lg-block  ">
     <button class="searchClose"><i class="fal fa-times"></i></button>
     <form action="#">
       <input type="text" class="border-theme" placeholder="What are you looking for">
       <button type="submit"><i class="fal fa-search"></i></button>
     </form>
-  </div>
+  </div> */?>
   <!--==============================
     Cart Side bar
   ============================== -->
-  <div class="sideCart-wrapper offcanvas-wrapper">
+  <?php /*<div class="sideCart-wrapper offcanvas-wrapper">
     <div class="sidemenu-content">
       <button class="closeButton border-theme bg-theme-hover sideMenuCls"><i class="far fa-times"></i></button>
       <div class="widget widget_shopping_cart">
@@ -62,14 +62,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> */?>
   <!--==============================
 		Mobile Menu
 	============================== -->
   <div class="vs-menu-wrapper">
     <div class="vs-menu-area text-center">
       <div class="mobile-logo">
-        <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Carmax" class="logo"></a>
+        <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Carmax" class="logo" style="max-width: 40%; border-radius: 12%;"></a>
         <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
       </div>
       <div class="vs-mobile-menu">
@@ -114,7 +114,8 @@
           </div>
         </div>
       </div>
-      <div class="widget">
+
+      <?php /*<div class="widget">
         <h4 class="widget_title">Articles de la galerie</h4>
         <div class="sidebar-gallery">
           <div class="gallery-thumb">
@@ -136,7 +137,7 @@
             <img src="assets/img/widget/gal-1-6.jpg" alt="Gallery Image" class="w-100">
           </div>
         </div>
-      </div>
+      </div> */?>
     </div>
   </div>
   <!--==============================
@@ -176,7 +177,7 @@
           <div class="row justify-content-between align-items-center gx-sm-0">
             <div class="col-auto">
               <div class="header-logo">
-                <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Cannabo" class="logo"></a>
+                <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Cannabo" style="max-width: 40%; border-radius: 12%;" class="logo"></a>
               </div>
             </div>
             <div class="col-auto flex-grow-1">
@@ -199,20 +200,22 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-auto d-none d-xl-block">
+
+            <?php /*<div class="col-auto d-none d-xl-block">
               <form class="header-search">
                 <button class="searchBoxTggler" aria-label="search-button">
                   <i><img src="assets/img/icons/search.png" alt=""></i>
                 </button>
                 <input type="text" placeholder="Search">
               </form>
-            </div>
+            </div> */?>
+
             <div class="col-auto">
               <div class="header-btns">
                 <a href="contact.html" class="user-btn d-none d-md-inline-flex">
                   <img src="assets/img/icons/user.png" alt="user">
                 </a>
-                <a href="cart.html" class="sideCartToggler d-none d-md-inline-flex">
+                <a href="javascript:void(0)" class="sideCartToggler d-none d-md-inline-flex">
                   <i class="fas fa-shopping-basket"></i>
                   <span>0</span>
                 </a>

@@ -6,12 +6,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Home 1 </title>
-  <meta name="author" content="vecuro">
-  <meta name="description" content="Cannabo - Marijuana and CBD Oil HTML5 Template">
-  <meta name="keywords" content="Cannabo - Marijuana and CBD Oil HTML5 Template" />
+  <title><?= $nom_entreprise ?> | Home</title>
+  <meta name="author" content="<?= $nom_entreprise ?>">
+  <meta name="description" content="<?=$decription_entreprise?>">
+  <meta name="keywords" content="<?=$decription_entreprise?>" />
   <meta name="robots" content="INDEX,FOLLOW">
   <!-- Mobile Specific Metas -->
+
+  <?php include "includes/style.php" ?>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
@@ -63,6 +66,12 @@
    		Code Start From Here 
 	******************************** -->
 <?php include "includes/header.php"?>
+<style>
+  .img-baner{
+    border-radius:15px;
+    /* max-width: 70% !important; */
+  }
+</style>
 
   <!-- Hero Area -->
   <section class="hero-style1">
@@ -76,6 +85,7 @@
     <div class="container">
 
       <div class="vs-carousel" data-dots="true" data-fade="true">
+
         <div>
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-8 mx-auto">
@@ -94,7 +104,7 @@
             </div>
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
               <div class="hero-img wow fadeInUp" data-wow-delay="0.4s"> 
-              <img src="<?= $image_banniere.$banniere1?>"style="border-radius:15px;" alt="hero image 1">                         
+              <img src="<?= $image_banniere.$banniere1?>" alt="hero image 1" class="img-baner">                         
                 <?php /*<span class="circle" style="margin-top:-2%;"></span> */ ?>
                 <div class="hero-certificate">
                   <img src="assets/img/logos/l-1-1.png" alt="logo">
@@ -125,7 +135,7 @@
             </div>
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
               <div class="hero-img">
-                <img src="<?= $image_banniere.$banniere2?>" style="border-radius:15px;" alt="hero image 1">
+                <img src="<?= $image_banniere.$banniere2?>" class="img-baner" alt="hero image 1">
                <?php /* <span class="circle"></span> */ ?>
                 <div class="hero-certificate">
                   <img src="assets/img/logos/l-1-1.png" alt="logo">
@@ -157,7 +167,7 @@
 
             <div class="col-xxl-auto col-xl-6 col-lg-8 mx-auto">
               <div class="hero-img">
-                <img src="<?= $image_banniere.$banniere3?>" style="border-radius:15px;" alt="hero image 1">
+                <img src="<?= $image_banniere.$banniere3?>" class="img-baner" alt="hero image 1">
               <?php /*  <span class="circle"></span> */ ?>
                 <div class="hero-certificate">
                   <img src="assets/img/logos/l-1-1.png" alt="logo"> 
@@ -183,7 +193,7 @@
               <img src="assets/img/icons/s-1-1.png" alt="icon">
             </div>
             <span class="sec-subtitle">Parcourir les catégories</span>
-            <h2 class="sec-title">Choisissez votre type de produit</h2>
+            <h2 class="sec-title">Types de produits</h2>
           </div>
         </div>
       </div>
@@ -194,7 +204,7 @@
         <div class="col-auto">
           <div class="cate-style">
             <div class="cate-figure">
-              <img src="assets/img/cate/c-1-1.png" alt="cate image" class="cate-img">
+              <img src="https://cdn-icons-png.flaticon.com/128/3502/3502688.png" alt="cate image" class="cate-img">
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
@@ -290,43 +300,7 @@
   </section>
   <!-- Category Area End -->
   <!-- About Area Start  -->
-  <section class="about-layout1 z-index-common space-extra-bottom">
-    <img src="assets/img/about/about-ele1-1.png" alt="about element" class="about-ele1">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-30">
-          <div class="img-box1">
-            <div class="img1">
-              <img class="img" src="<?=$image_banniere.$image_about ?>" alt="about 1 1">
-            </div>
-            <div class="video-thumb1">
-              <img class="img" src="<?=$image_banniere.$banniere1 ?>" alt="about 2 2">
-              <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style7 popup-video" tabindex="0"><i
-                class="fas fa-play"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-30">
-          <div class="about-content1">
-           <div class="title-area">
-              <span class="sec-subtitle">Bienvenue à Canobbo</span>
-              <h2 class="sec-title"><?= $apropos_entreprise ?></h2>
-            </div> 
-              <?php /*  <div class="about-body">
-             <p class="about-text">We Provide High Quality And Certified Products</p>
-              <div class="list-style1">
-                <ul>
-                  <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
-                  <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
-                  <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
-                </ul>
-              </div>  */?>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include "includes/section_about.php" ?>
   <!-- About Area End  -->
   <!-- Review Area -->
   <section class="space-bottom">
@@ -342,8 +316,8 @@
                   </div>
                 </div>
                 <div class="review-content__right">
-                  <h2 class="review-title h3">Spécialiste n°1 du CBD</h2>
-                  <p class="review-text">Huiles de CBD, frictions articulaires et musculaires, soins de la peau et cosmétiques, produits comestibles, boissons,
+                  <h2 class="review-title h3">Spécialiste n°1 du <?= $nom_entreprise ?></h2>
+                  <p class="review-text">Huiles de <?= $nom_entreprise ?>, frictions articulaires et musculaires, soins de la peau et cosmétiques, produits comestibles, boissons,
                     e-liquides, concentrés et
                     isole, vape et plus encore…</p>
                 </div>
@@ -394,8 +368,8 @@
               <span class="product-cate"><?=$value->courte_description?></span>
               <span class="product-price"><?= $value->prix_reel."".$devise[0]->code_iso_devise?></span>
               <div class="product-actions">
-                <a href="cart" class="vs-btn">Ajouter au panier</a>
-                <a href="cart" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                <a href="product-details/<?=$value->mat_article?>" class="vs-btn">Ajouter au panier</a>
+                <a href="product-details/<?=$value->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
               </div>
             </div>
           </div>
@@ -563,7 +537,7 @@
         <div class="col-xl-7 col-lg-8">
           <div class="title-area">
             <span class="sec-subtitle">Qu’est-ce qui fait la différence ?</span>
-            <h2 class="sec-title">Qu’est-ce qui différencie Canobbo CBD ?</h2>
+            <h2 class="sec-title">Qu’est-ce qui différencie <?= $nom_entreprise ?> ?</h2>
           </div>
         </div>
         <div class="col-auto">
@@ -814,7 +788,7 @@
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">Je prends de l'huile de CBD depuis maintenant 2 ans.
+              <p class="testi-text">Je prends de l'huile de <?= $nom_entreprise ?> depuis maintenant 2 ans.
                 J'ai cherché sur de nombreux sites,
                 les informations et la gamme de produits de haute qualité
                 les produits étaient incroyables.
@@ -828,7 +802,7 @@
               <span style="width:100%">Noté<strong class="rating">5</strong>Sur 5</span>
             </div>
             <span class="testi-author">Par <a href="#">Tchakountio Abdel</a></span>
-            <h3 class="testi-title">L’huile de CBD vraiment savoureuse</h3>
+            <h3 class="testi-title">L’huile de <?= $nom_entreprise ?> vraiment savoureuse</h3>
             <div class="testi-content">
               <div class="testi-image">
                 <img class="img1" src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="testimonials">
@@ -857,7 +831,7 @@
                 <img src="assets/img/icons/testimonials-quote-icon-1.png" alt="testimonials icon">
               </i>
               </div>
-              <p class="testi-text">J'utilise de l'huile de CBD depuis trois ans.
+              <p class="testi-text">J'utilise de l'huile de <?= $nom_entreprise ?> depuis trois ans.
                  Après avoir exploré de nombreux sites, j'ai été vraiment impressionné par les avis sur l'huile Cannaray.
               </p>
             </div>
@@ -868,96 +842,98 @@
   </section>
   <!-- Testimonials Area End -->
   <!-- Blog Area Start -->
-  <section class="blog space-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="title-area text-center">
-            <div class="sec-icon">
-              <img src="assets/img/icons/s-1-1.png" alt="icon">
+   <?php if(!empty($article)): ?>
+    <section class="blog space-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="title-area text-center">
+              <div class="sec-icon">
+                <img src="assets/img/icons/s-1-1.png" alt="icon">
+              </div>
+              <span class="sec-subtitle">Nouvelles et mises à jour</span>
+              <h2 class="sec-title">Articles récents</h2>
             </div>
-            <span class="sec-subtitle">Nouvelles et mises à jour</span>
-            <h2 class="sec-title">Articles récents</h2>
+          </div>
+        </div>
+        <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
+          <?php foreach($article as $key=>$val) :
+            if($key<3){
+            ?>
+          <div class="col-lg-4">
+            <div class="vs-blog blog-style1">
+              <div class="blog-img" style="hight:300px; width:300px;">
+              <img src="<?=$url_image.$val->photo?>" alt="Blog Image" class="img w-100">  
+              </div>
+              <?php $date=explode("-",$val->date);?>
+              <span class="blog-date"><?=$date[2]?> <span><?=$date[1]?>, <?=$date[0]?></span></span>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <a href="blog-details/<?=$val->matricule?>" tabindex="0">Publié <span>Par <?= $val->user_admin?></span></a>
+                  <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
+                </div>
+                <h3 class="blog-title h5">
+                  <a href="blog-details/<?=$val->matricule?>" tabindex="0"> 
+                  <?=$val->titre?>
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <?php } else{
+            break;
+          } endforeach?>
+          <?php /*
+          <div class="col-lg-4">
+            <div class="vs-blog blog-style1">
+              <div class="blog-img">
+                <img src="assets/img/blog/blog-1-2.jpg" alt="Blog Image" class="img w-100">
+              </div>
+              <span class="blog-date">24 <span>Fev, 2022</span></span>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
+                  <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
+                </div>
+                <h3 class="blog-title h5">
+                  <a href="blog-details" tabindex="0">
+                  Comment une lotion contenant du CBD aide-t-elle votre peau ?
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="vs-blog blog-style1">
+              <div class="blog-img">
+                <img src="assets/img/blog/blog-1-3.jpg" alt="Blog Image" class="img w-100">
+              </div>
+              <span class="blog-date">24 <span>Fev, 2022</span></span>
+              <div class="blog-content">
+                <div class="blog-meta">
+                  <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
+                  <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
+                </div>
+                <h3 class="blog-title h5">
+                  <a href="blog-details" tabindex="0">
+                  Pourquoi la liste des ingrédients des produits CBD doit-elle être examinée ?
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          */ ?>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="d-inline-flex pt-30">
+              <a href="blog" class="vs-btn style2">Voir tout les articles</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
-        <?php foreach($article as $key=>$val) :
-          if($key<3){
-          ?>
-        <div class="col-lg-4">
-          <div class="vs-blog blog-style1">
-            <div class="blog-img" style="hight:300px; width:300px;">
-             <img src="<?=$url_image.$val->photo?>" alt="Blog Image" class="img w-100">  
-            </div>
-            <?php $date=explode("-",$val->date);?>
-            <span class="blog-date"><?=$date[2]?> <span><?=$date[1]?>, <?=$date[0]?></span></span>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <a href="blog-details/<?=$val->matricule?>" tabindex="0">Publié <span>Par <?= $val->user_admin?></span></a>
-                <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
-              </div>
-              <h3 class="blog-title h5">
-                <a href="blog-details/<?=$val->matricule?>" tabindex="0"> 
-                <?=$val->titre?>
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <?php } else{
-          break;
-        } endforeach?>
-        <?php /*
-        <div class="col-lg-4">
-          <div class="vs-blog blog-style1">
-            <div class="blog-img">
-              <img src="assets/img/blog/blog-1-2.jpg" alt="Blog Image" class="img w-100">
-            </div>
-            <span class="blog-date">24 <span>Fev, 2022</span></span>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
-                <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
-              </div>
-              <h3 class="blog-title h5">
-                <a href="blog-details" tabindex="0">
-                Comment une lotion contenant du CBD aide-t-elle votre peau ?
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="vs-blog blog-style1">
-            <div class="blog-img">
-              <img src="assets/img/blog/blog-1-3.jpg" alt="Blog Image" class="img w-100">
-            </div>
-            <span class="blog-date">24 <span>Fev, 2022</span></span>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <a href="blog" tabindex="0">Publié <span>Par Jhon Smith</span></a>
-                <a class="blog-meta-icon" href="blog" tabindex="0"><i class="fas fa-comments"></i> 14 Commentaires</a>
-              </div>
-              <h3 class="blog-title h5">
-                <a href="blog-details" tabindex="0">
-                Pourquoi la liste des ingrédients des produits CBD doit-elle être examinée ?
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        */ ?>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <div class="d-inline-flex pt-30">
-            <a href="blog" class="vs-btn style2">Voir tout les articles</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  <?php endif ?>
   <!-- Blog Area End -->
 
   <!-- Footer Area Start -->

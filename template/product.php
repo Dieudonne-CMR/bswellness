@@ -11,12 +11,15 @@
   ?>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Cannabo - Marijuana and CBD Oil HTML5 Template | Vecuro | Our Products 1 </title>
-  <meta name="author" content="vecuro">
-  <meta name="description" content="Cannabo - Marijuana and CBD Oil HTML5 Template">
-  <meta name="keywords" content="Cannabo - Marijuana and CBD Oil HTML5 Template" />
+  <title><?= $nom_entreprise ?> | Produits </title>
+  <meta name="author" content="<?= $nom_entreprise ?>">
+  <meta name="description" content="<?=$decription_entreprise?>">
+  <meta name="keywords" content="<?=$decription_entreprise?>" />
   <meta name="robots" content="INDEX,FOLLOW">
   <!-- Mobile Specific Metas -->
+   
+  <?php include "includes/style.php" ?>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
@@ -180,7 +183,7 @@
                   <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
                   <span class="product-weight"><?=$produit->courte_description?></span>
                   <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
-                  <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                  <a href="product-details/<?=$produit->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                 </div>
               </div>
             </div>
@@ -405,8 +408,8 @@
                   <span class="product-cate"><?=$produit->courte_description?></span>
                   <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?></span>
                   <div class="product-actions">
-                    <a href="cart.html" class="vs-btn">Ajouter au panier</a>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                    <a href="product-details/<?=$produit->mat_article?>" class="vs-btn">Ajouter au panier</a>
+                    <a href="product-details/<?=$produit->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                   </div>
                 </div>
               </div>
@@ -428,8 +431,8 @@
                   <span class="product-cate"><?=$produit->courte_description?></span>
                   <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?></span>
                   <div class="product-actions">
-                    <a href="cart.html" class="vs-btn">Ajouter au panier</a>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
+                    <a href="product-details/<?=$produit->mat_article?>" class="vs-btn">Ajouter au panier</a>
+                    <a href="product-details/<?=$produit->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                   </div>
                 </div>
               </div>

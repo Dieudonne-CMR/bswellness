@@ -72,9 +72,9 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #47b32d;
-  --theme-color-light: #2f9916;
-  --theme-color2: #ffcb24;
+  /* --theme-color: #47b32d;
+  --theme-color-light: #2f9916; */
+  /* --theme-color2: #ffcb24; */
   --title-color: #010101;
   --body-color: #000000;
   --text-color: #4e4d4d;

@@ -120,7 +120,7 @@
             <div class="widget footer-widget">
               <div class="vs-widget-about">
                 <div class="footer-logo">
-                  <a href="home"><img src="<?=$lien_logo.$logo?>" alt="Cannabo" class="logo"></a>
+                  <a href="home"><img src="<?= $lien_logo.$logo ?>" alt="Cannabo" style="max-width: 30%; border-radius: 12%;" class="logo"></a>
                 </div>
                 <p class="footer-text style3"><?=$decription_entreprise?>
                  </p>
@@ -137,9 +137,7 @@
               <h3 class="widget_title style3">Information de contacts</h3>
               <div class="footer-info style3">
                 <div class="footer-info__icon">
-                  <i>
-                                    <img src="assets/img/icons/footer-info-1-1.png" alt="footer info">
-                                </i>
+                  <i><img src="assets/img/icons/footer-info-1-1.png"  alt="footer info"></i>
                 </div>
                 <div class="media-body">
                   <div class="footer-info__link">
@@ -149,9 +147,7 @@
               </div>
               <div class="footer-info style3">
                 <div class="footer-info__icon">
-                  <i>
-                                    <img src="assets/img/icons/footer-info-1-2.png" alt="footer info">
-                                </i>
+                  <i><img src="assets/img/icons/footer-info-1-2.png" alt="footer info"></i>
                 </div>
                 <div class="media-body">
                   <span class="footer-info__label">Numéro de téléphone:</span>
@@ -162,9 +158,7 @@
               </div>
               <div class="footer-info style3">
                 <div class="footer-info__icon">
-                  <i>
-                                    <img src="assets/img/icons/footer-info-1-3.png" alt="footer info">
-                                </i>
+                  <i><img src="assets/img/icons/footer-info-1-3.png" alt="footer info"></i>
                 </div>
                 <div class="media-body">
                   <span class="footer-info__label">Adresse email:</span>

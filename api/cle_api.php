@@ -11,11 +11,11 @@ $lien_logo ="https://akila.blog/logo_site/";
 //---------lien pour les bannieres de l'entreprise
 $image_banniere ="https://akila.blog/image_baniere/";
 //------- partenaire
-$logo_partenaire = "https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire 674051cecbd47
+$logo_partenaire = "https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire 
 
 
 // include "bd/query.php" ;
-$matricule_entreprise = "662f2c0f2234e";
+$matricule_entreprise = "674051cecbd47";
 include "api/api_info_entreprise.php";
 include "api/api_header.php";
 include "api/fonctionne.php";

@@ -44,6 +44,7 @@ endif;
 
 //------- Route page detail produit
 if(@$url[0]=='product-details'):
+    $produits = recup_produict();
     $mat_produit= strip_tags(@$url[1]);
     $devise2 = info_boutique();
     $detail_pro= recup_produict_detail($mat_produit);
