@@ -212,9 +212,9 @@
 
             <div class="col-auto">
               <div class="header-btns">
-                <a href="contact.html" class="user-btn d-none d-md-inline-flex">
+                <?php /*<a href="contact.html" class="user-btn d-none d-md-inline-flex">
                   <img src="assets/img/icons/user.png" alt="user">
-                </a>
+                </a> */?>
                 <a href="javascript:void(0)" class="sideCartToggler d-none d-md-inline-flex">
                   <i class="fas fa-shopping-basket"></i>
                   <span>0</span>

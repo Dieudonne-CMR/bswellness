@@ -17,21 +17,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="60x60" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="120x120" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="152x152" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?=$lien_logo.$logo?>">
   <link rel="manifest" href="assets/img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="<?=$lien_logo.$logo?>">
   <meta name="theme-color" content="#ffffff">
   <!--==============================
 	  Google Fonts
@@ -89,10 +89,49 @@
   </section>
   <!-- breadcumb End assets/img/bg/b-1-3.png-->
   <!-- About Area Start  -->
-  <?php include "includes/section_about.php" ?>
+  <section class="about-layout1 space-top z-index-common space-extra-bottom">
+    <img src="assets/img/about/about-ele1-1.png" alt="about element" class="about-ele1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-30">
+          <div class="img-box1">
+            <div class="img1">
+              <img class="img" src="<?=$image_banniere.$image_about?>" alt="about 1 1">
+            </div>
+            <div class="video-thumb1">
+              <img class="img" src="<?=$image_banniere.$banniere1?>" alt="about 2 2" style="width: 22rem;">
+              <a href="https://www.youtube.com/watch?v=zX-jSCDsJ8E" class="play-btn style7 popup-video" tabindex="0"><i
+                class="fas fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-30">
+          <div class="about-content1">
+            <div class="title-area">
+              <span class="sec-subtitle">Bienvenue Chez <?= $nom_entreprise ?></span>
+              
+              <p class="about-text"> <?= $apropos_entreprise ?> </p>
+            </div>
+            <div class="about-body">
+             <!-- <p class="about-text">There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form,
+                by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage
+                of variations of passages of lorem.</p> -->
+             <?php /* <div class="list-style1">
+                <ul>
+                  <li><i><img src="assets/img/icons/shield.png" alt="shield"></i>100% huile de cannabis</li>
+                  <li><i><img src="assets/img/icons/marijuana.png" alt="shield"></i>Ingrédients à base de plantes</li>
+                  <li><i><img src="assets/img/icons/microscope.png" alt="shield"></i>Testé en laboratoire par un tiers</li>
+                </ul>
+              </div> */ ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- About Area End  -->
   <!-- Review Area -->
-  <section class="space-bottom">
+  <?php /*<section class="space-bottom">
     <div class="container">
       <div class="position-relative">
         <div class="review-wrap">
@@ -105,8 +144,8 @@
                   </div>
                 </div>
                 <div class="review-content__right">
-                  <h2 class="review-title h3">Spécialiste n°1 du CBD</h2>
-                  <p class="review-text">Huiles de CBD, frictions articulaires et musculaires, soins de la peau et cosmétiques, produits comestibles, boissons,
+                  <h2 class="review-title h3">Spécialiste n°1 du <?= $nom_entreprise ?></h2>
+                  <p class="review-text">Huiles de <?= $nom_entreprise ?>, frictions articulaires et musculaires, soins de la peau et cosmétiques, produits comestibles, boissons,
                     e-liquides, concentrés et
                     isole, vape et plus encore…</p>
                 </div>
@@ -123,11 +162,11 @@
         <img src="assets/img/shapes/s-1-1.png" alt="shape" class="shape-1">
       </div>
     </div>
-  </section>
+  </section> */?>
   <!-- Review Area End -->
   <!-- Featue Area -->
   <section class="space-top space-bottom z-index-common" data-bg-src="assets/img/bg/bg-1-1.jpg">
-    <img src="assets/img/leafs/feature-3-1.png" alt="feature element 1" class="feature-element1">
+    <!-- <img src="assets/img/leafs/feature-3-1.png" alt="feature element 1" class="feature-element1"> -->
     <div class="container">
       <div class="row">
         <div class="col-lg-7 mx-auto">
@@ -145,10 +184,8 @@
               <span class="feature-number">1.</span>
             </div>
             <div class="feature-content">
-              <h3 class="feature-title">Parcourez notre CBD</h3>
-              <p class="feature-text">Parcourez notre savoureuse sélection de produits comestibles disponibles.
-              Nos produits CBD vous donnent un accès sécurisé au
-              plein potentiel.
+              <h3 class="feature-title"><?= $titre_s1 ?></h3>
+              <p class="feature-text"><?= $discription_s1 ?>
               </p>
             </div>
           </div>
@@ -158,10 +195,8 @@
               <span class="feature-number">2.</span>
             </div>
             <div class="feature-content">
-              <h3 class="feature-title">Passez votre commande</h3>
-              <p class="feature-text">Parcourez notre savoureuse sélection de produits comestibles disponibles.
-                Nos produits CBD vous donnent un accès sécurisé au
-                plein potentiel.
+              <h3 class="feature-title"><?= $titre_s2 ?></h3>
+              <p class="feature-text"><?= $discription_s2 ?>
               </p>
             </div>
           </div>
@@ -171,11 +206,8 @@
               <span class="feature-number">3.</span>
             </div>
             <div class="feature-content">
-              <h3 class="feature-title">Livrez votre commande</h3>
-              <p class="feature-text">Parcourez notre savoureuse sélection de produits comestibles disponibles.
-                Nos produits CBD vous donnent un accès sécurisé au
-                plein potentiel.
-              </p>
+            <h3 class="feature-title"><?= $titre_s3 ?></h3>
+            <p class="feature-text"><?= $discription_s3 ?>
             </div>
           </div>
         </div>

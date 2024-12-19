@@ -16,21 +16,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="60x60" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="120x120" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="152x152" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?=$lien_logo.$logo?>">
   <link rel="manifest" href="assets/img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="<?=$lien_logo.$logo?>">
   <meta name="theme-color" content="#ffffff">
   <!--==============================
 	  Google Fonts
@@ -134,7 +134,7 @@
             </div>
             <h2 class="product-title"><?=$nom_produit?></h2>
             <span class="product-ml"><p><?=$courte_description?></p></span>
-            <p class="product-price"><?=$prix_reel."".$devise2[0]->code_iso_devise?> <del><?=$prix_fictif."".$devise2[0]->code_iso_devise?></del></p>
+            <p class="product-price"><?=  number_format($prix_reel, 0, '', ' ')." ".$devise2[0]->code_iso_devise?> <del><?=$prix_fictif."".$devise2[0]->code_iso_devise?></del></p>
             <div class="actions">
               <div class="quantity">
                 <?php /*<label for="quantity" class="screen-reader-text">Quantité:</label>
@@ -165,7 +165,7 @@
               </ul>
             </div>
             <div class="pro-btns">
-              <a href="<?= $lien_watSapp ?>" class="vs-btn">Ajouter au panier</a>
+              <a href="<?= $lien_watSapp ?>" class="vs-btn"><i class="fab fa-whatsapp"></i>Commandez Maintenant</a>
               <a href="#" class="icon-btn"><i class="far fa-heart"></i></a>
             </div>
             <div class="product_meta">
@@ -197,7 +197,7 @@
   <!-- Related Products Ajouter des avis-->
   <section class="space-extra-bottom">
     <div class="container">
-      <h3 class="blog-inner-title">Produits des mêmes catégories</h3>
+      <h3 class="blog-inner-title">Autres produits</h3>
       <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1">
         <?php foreach( $produits as $key=> $value):
           if($key < 6):

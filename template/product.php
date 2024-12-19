@@ -22,21 +22,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="60x60" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="120x120" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="152x152" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?=$lien_logo.$logo?>">
   <link rel="manifest" href="assets/img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="<?=$lien_logo.$logo?>">
   <meta name="theme-color" content="#ffffff">
   <!--==============================
 	  Google Fonts
@@ -158,7 +158,7 @@
                   </h3>
                   <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
                   <span class="product-weight"><?=$produit->courte_description?></span>
-                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
+                  <span class="product-price"><?= number_format($produit->prix_reel, 0, '', ' ')." ".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
                   <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                 </div>
               </div>
@@ -182,7 +182,7 @@
                   </h3>
                   <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
                   <span class="product-weight"><?=$produit->courte_description?></span>
-                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
+                  <span class="product-price"><?=  number_format($produit->prix_reel, 0, '', ' ')." ".$devise1[0]->code_iso_devise?><del><?=$produit->prix_fictif."".$devise1[0]->code_iso_devise?></del></span>
                   <a href="product-details/<?=$produit->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
                 </div>
               </div>
@@ -406,7 +406,7 @@
                   <h3 class="product-title"><a href="product-details/<?=$produit->mat_article?>"><?=$produit->nom_art?></a></h3>
                   <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
                   <span class="product-cate"><?=$produit->courte_description?></span>
-                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?></span>
+                  <span class="product-price"><?=  number_format($produit->prix_reel, 0, '', ' ')." ".$devise1[0]->code_iso_devise?></span>
                   <div class="product-actions">
                     <a href="product-details/<?=$produit->mat_article?>" class="vs-btn">Ajouter au panier</a>
                     <a href="product-details/<?=$produit->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
@@ -429,7 +429,7 @@
                   <h3 class="product-title"><a href="product-details/<?=$produit->mat_article?>"><?=$produit->nom_art?></a></h3>
                   <?php $produit->courte_description= strTextLent($produit->courte_description,80) ?>
                   <span class="product-cate"><?=$produit->courte_description?></span>
-                  <span class="product-price"><?=$produit->prix_reel."".$devise1[0]->code_iso_devise?></span>
+                  <span class="product-price"><?=  number_format($produit->prix_reel, 0, '', ' ')."".$devise1[0]->code_iso_devise?></span>
                   <div class="product-actions">
                     <a href="product-details/<?=$produit->mat_article?>" class="vs-btn">Ajouter au panier</a>
                     <a href="product-details/<?=$produit->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>

@@ -113,7 +113,7 @@
 </section> */?>
 <section class="footer-layout3">
     <div class="widget-area style3" data-bg-src="assets/img/bg/footer-bg-3-1.png">
-      <img src="assets/img/leafs/footer-3-1.png" alt="footer leafs" class="footer-overlay">
+      <!-- <img src="assets/img/leafs/footer-3-1.png" alt="footer leafs" class="footer-overlay"> -->
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4">
@@ -152,7 +152,7 @@
                 <div class="media-body">
                   <span class="footer-info__label">Numéro de téléphone:</span>
                   <div class="footer-info__link">
-                    <a href="tel:+1800-2355-2356"><?=$telephone?></a>
+                    <a href="tel:<?=$telephone?>"><?=$telephone?></a>
                   </div>
                 </div>
               </div>

@@ -9,7 +9,7 @@
   <title><?= $nom_entreprise ?> | Home</title>
   <meta name="author" content="<?= $nom_entreprise ?>">
   <meta name="description" content="<?=$decription_entreprise?>">
-  <meta name="keywords" content="<?=$decription_entreprise?>" />
+  <meta name="keywords" content="<?=$decription_entreprise?>, Golden Rock Sarl, Akila Web Factory" />
   <meta name="robots" content="INDEX,FOLLOW">
   <!-- Mobile Specific Metas -->
 
@@ -17,21 +17,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons - Place favicon.ico in the root directory -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="60x60" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="120x120" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="152x152" href="<?=$lien_logo.$logo?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?=$lien_logo.$logo?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?=$lien_logo.$logo?>">
   <link rel="manifest" href="assets/img/favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="<?=$lien_logo.$logo?>">
   <meta name="theme-color" content="#ffffff">
   <!--==============================
 	  Google Fonts
@@ -77,7 +77,7 @@
   <section class="hero-style1">
     <div class="hero-bg" data-bg-src="assets/img/bg/b-1-1.png"></div>
     <div class="hero-leaf2 wow fadeInUp" data-wow-delay="1s">
-      <img src="assets/img/hero/h-1-3.png" alt="hero leaf 2">
+      <!-- <img src="assets/img/hero/h-1-3.png" alt="hero leaf 2"> -->
     </div>
     <div class="hero-leaf3 wow fadeInUp" data-wow-delay="1.2s">
       <img src="assets/img/hero/h-1-4.png" alt="hero leaf 3">
@@ -208,10 +208,10 @@
             </div>
             <div class="cate-content">
               <h3 class="cate-title">
-                <a class="cate-title__link" href="services"><?= $val->libelle ?></a>
+                <a class="cate-title__link" href="product"><?= $val->libelle ?></a>
               </h3>
               <span class="cate-num">
-              <a class="cate-num__link" href="services"><?= count_produit_cat($val->mat_categorie) ?></a>
+              <?php /*<a class="cate-num__link" href="services"><?= count_produit_cat($val->mat_categorie) ?></a> */?>
             </span>
             </div>
           </div>
@@ -302,8 +302,9 @@
   <!-- About Area Start  -->
   <?php include "includes/section_about.php" ?>
   <!-- About Area End  -->
-  <!-- Review Area -->
-  <section class="space-bottom">
+  <!-- Review Area --> 
+
+  <?php /*<section class="space-bottom">
     <div class="container">
       <div class="position-relative">
         <div class="review-wrap">
@@ -334,7 +335,7 @@
         <img src="assets/img/shapes/s-1-1.png" alt="shape" class="shape-1">
       </div>
     </div>
-  </section>
+  </section>  */?>
   <!-- Review Area End -->
   <!-- Products Area -->
   <section class="space-top space-bottom" data-bg-src="assets/img/bg/bg-1-1.jpg">
@@ -366,7 +367,7 @@
               <h3 class="product-title"><a href="product-details/<?=$value->mat_article?>"><?= $value->nom_art?></a></h3>
               <?php $value->courte_description= strTextLent($value->courte_description,50) ?>
               <span class="product-cate"><?=$value->courte_description?></span>
-              <span class="product-price"><?= $value->prix_reel."".$devise[0]->code_iso_devise?></span>
+              <span class="product-price"><?= number_format($value->prix_reel, 0, '', ' ')."".$devise[0]->code_iso_devise?></span>
               <div class="product-actions">
                 <a href="product-details/<?=$value->mat_article?>" class="vs-btn">Ajouter au panier</a>
                 <a href="product-details/<?=$value->mat_article?>" class="cart-btn"><i class="fas fa-shopping-basket"></i></a>
@@ -544,7 +545,7 @@
           <div class="call-card">
             <div class="call-card__content">
               <span class="call-card__title">Besoin d'aide ?</span>
-              <a class="call-card__number" href="tel:+12345 56535"><?= $telephone ?></a>
+              <a class="call-card__number" href="<?= $telephone ?>"><?= $telephone ?></a>
             </div>
             <div class="call-card__icon">
               <img src="assets/img/icons/phone-1-1.png" alt="phone icon">
@@ -558,7 +559,7 @@
             <div class="col-md-6">
               <div class="feature-item">
                 <div class="feature-header">
-                  <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg">
+                  <!-- <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg"> -->
                   <div class="feature-icon">
                     <img src="assets/img/icons/feature-1-1.png" alt="feature icon 1">
                   </div>
@@ -576,7 +577,7 @@
             <div class="col-md-6">
               <div class="feature-item">
                 <div class="feature-header">
-                  <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg">
+                  <!-- <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg"> -->
                   <div class="feature-icon">
                     <img src="assets/img/icons/feature-1-2.png" alt="feature icon 1">
                   </div>
@@ -594,7 +595,7 @@
             <div class="col-md-6">
               <div class="feature-item">
                 <div class="feature-header">
-                  <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg">
+                  <!-- <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg"> -->
                   <div class="feature-icon">
                     <img src="assets/img/icons/feature-1-3.png" alt="feature icon 1">
                   </div>
@@ -612,7 +613,7 @@
             <div class="col-md-6">
               <div class="feature-item">
                 <div class="feature-header">
-                  <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg">
+                  <!-- <img src="assets/img/features/feature-1-1.png" alt="feature icon" class="feature-icon-bg"> -->
                   <div class="feature-icon">
                     <img src="assets/img/icons/feature-1-4.png" alt="feature icon 1">
                   </div>
@@ -640,8 +641,8 @@
   </section>
   <!-- Features Area End -->
   <!-- Banner Area -->
-  <div class="space-extra-bottom">
-    <div class="container">
+  <div class="space-extra-bottom " data-bg-src="assets/img/bg/bg-1-1.jpg">
+    <div class="container" style="padding-top: 8rem;">
       <div class="row">
         <div class="col-lg-6">
           <div class="banner-style">
